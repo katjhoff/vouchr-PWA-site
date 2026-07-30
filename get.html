@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting...</title>
+    <script>
+        // Detect iOS or Android
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        const isAndroid = /Android/.test(navigator.userAgent);
+
+        // Use your existing App Store and Play Store links
+        const iosStore = 'https://apps.apple.com/us/app/home-rhythm-chore-tracker/id6791143992';
+        const androidStore = 'https://play.google.com/store/apps/details?id=com.pocketenginestudio.homerhythm';
+
+        // Redirect immediately
+        if (isIOS) {
+            window.location.href = iosStore;
+        } else if (isAndroid) {
+            window.location.href = androidStore;
+        } else {
+            // Fallback for desktop
+            document.body.innerHTML = '<h2>Please open this link on your mobile device.</h2>';
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to the app store...</p>
+</body>
+</html>
