@@ -14,8 +14,11 @@ const ASSETS_TO_CACHE = [
   'locales/es.json',
   'locales/fr.json',
   'locales/de.json',
-  'locales/zh.json',
+  'locales/ko.json',
   'locales/ja.json',
+  'locales/pt.json',
+  'locales/sv.json',
+  'locales/da.json',
   'images/LOGONEW.png'
 ];
 
