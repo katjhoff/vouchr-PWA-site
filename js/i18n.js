@@ -1,6 +1,6 @@
 // js/i18n.js
 (function() {
-    const supportedLocales = ['en', 'es', 'fr', 'de', 'zh', 'ja'];
+    const supportedLocales = ['en', 'es', 'fr', 'de', 'ja', 'ko', 'pt', 'da', 'sv'];
     let currentLocale = 'en';
     let translations = {};
 
