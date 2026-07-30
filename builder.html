@@ -521,7 +521,7 @@
 </div>        <div class="footer-links mb-4">
             <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
             <a href="terms.html" data-i18n="footer_terms">Terms of Service</a>
-            <a href="mailto:help@pocketenginestudio.com" data-i18n="footer_contact">Contact Us</a>
+            <a href="mailto:develop@pocketenginestudio.com" data-i18n="footer_contact">Contact Us</a>
         </div>
         <p class="text-muted small mb-0" data-i18n="footer_copyright">&copy; 2026 PocketEngine Studio LLC. All rights reserved.</p>
     </div>
@@ -580,18 +580,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-
-// Accurate Private / Restricted Storage Test
-function checkStorageReliability() {
-    try {
-        const testKey = '__vouchr_test__';
-        localStorage.setItem(testKey, '1');
-        localStorage.removeItem(testKey);
-        return true; 
-    } catch (e) {
-        return false; 
-    }
-}
 
 document.addEventListener('DOMContentLoaded', () => {
     if (!checkStorageReliability()) {
@@ -716,9 +704,9 @@ document.getElementById('btnCustomize').addEventListener('click', () => { show(2
 document.getElementById('btnCreateShop').addEventListener('click', async () => { if (await createStore(false)) { generateQR(); show(3); }});
     // Security Segmented Control
     const securityDescriptions = {
-        'basic': 'Low security – print once and never change it. Ideal for low-traffic areas where fraud is unlikely.',
-        'simple': 'Medium security – date-bound QR prevents reuse on a different day. Requires print refresh daily.',
-        'secure': 'High security – cryptographically signed. The app verifies every scan against your private key. Ideal for busy locations.'
+        'basic': 'Low security – Customers can only stamp once per day. Your QR code never changes, so you print it once and use it forever. No date, location, or signature checks. Best for low-traffic areas where fraud is not a concern.',
+        'simple': 'Medium security – Customers can only stamp once per day. QR codes expire daily and require customers to be physically near your store to stamp. Prevents old QR reuse and screenshot sharing. Requires refreshing the QR code daily (refresh the page or print fresh). Recommended for most stores.',
+        'secure': 'High security – All the protection of Simple mode, plus cryptographic signing that prevents QR tampering and forgery. The app cryptographically verifies every scan against your stores private key. Requires refreshing the QR code daily (refresh the page or print fresh). Perfect for busy, high-value stores where fraud prevention is critical.'
     };
 
     document.querySelectorAll('.segmented-option').forEach(opt => {
@@ -739,6 +727,12 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
         const payload = { 
             sid: storeData.sid, sn: storeData.sn, pk: storeData.pk, ct: storeData.ct, m: mode, tz: storeData.tz || 'UTC'
         };
+
+        // NEW: Ensure the location coordinates are injected into the QR payload!
+        if (storeData.loc) {
+            payload.loc = storeData.loc;
+        }
+
         if (mode === 'simple' || mode === 'secure') {
             payload.d = new Date().toISOString().split('T')[0];
         }
@@ -795,7 +789,7 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
             
             hiddenDiv.innerHTML = '';
             new QRCode(hiddenDiv, {
-                text: `https://arguably.pocketenginestudio.com/get.html?payload=${encodeURIComponent(JSON.stringify(payload))}`,
+                text: `https://vouchrdigital.pocketenginestudio.com/get.html?payload=${encodeURIComponent(JSON.stringify(payload))}`,
                 width: 400, height: 400, colorDark: "#1D1D1F", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H
             });
             

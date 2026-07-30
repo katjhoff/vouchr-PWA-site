@@ -1,6 +1,6 @@
 {
-  "page_title": "Vouchr: Cartão de Fidelidade Digital",
-
+  "page_title": "Vouchr: Construtor de Lojas",
+  
   "nav_home": "INÍCIO",
   "nav_features": "Recursos",
   "nav_pricing": "Preços",
@@ -39,12 +39,13 @@
   "pricing_sub": "Acreditamos que ferramentas de fidelidade devem fortalecer pequenos negócios, não tributar.",
   "price_tag": "R$0",
   "pricing_item1": "Passes Ativos Ilimitados",
-  "pricing_item2": "Apple Wallet nativo (Android em breve)",
+  "pricing_item2": "Apple Wallet nativo",
+  "pricing_item_android": "Disponível no Android (Google Wallet em breve)",
   "pricing_item3": "Regras Automáticas de Happy Hour",
   "pricing_item4": "Expositores Imprimíveis Instantâneos",
   "pricing_btn": "Criar QR da Loja",
 
-  "footer_brand": "Vouchr: Cartão de Fidelidade Digital",
+  "footer_brand": "Vouchr: Construtor de Lojas",
   "footer_privacy": "Política de Privacidade",
   "footer_terms": "Termos de Serviço",
   "footer_contact": "Fale Conosco",
@@ -64,14 +65,14 @@
   "hint_opening_time": "Alerta clientes quando você abre. Limpar para desativar.",
   "label_gps_location": "Localização GPS",
   "placeholder_gps_location": "Latitude, Longitude",
-  "hint_gps_location": "Permite alertas localizados na tela de bloqueio quando próximo.",
+  "hint_gps_location": "Envia um alerta na tela de bloqueio para clientes próximos e impede que carimbos sejam obtidos fora da sua loja.",
   "btn_skip": "Usar Padrões",
   "btn_customize": "Personalizar Informações",
 
   "step2_title": "Design e Recompensas",
   "label_display_name": "Nome de exibição",
   "placeholder_display_name": "Café do Moe",
-  "hint_display_name": "Máx. 20 caracteres.",
+  "hint_display_name": "O que será exibido no cartão do cliente. Máx. 20 caracteres.",
   "label_reward_desc": "Descrição da recompensa",
   "placeholder_reward_desc": "Café grátis após 8 carimbos",
   "hint_reward_desc": "Máx. 30 caracteres (ex: Bebida grátis após 8 carimbos).",
@@ -79,19 +80,19 @@
   "label_expiry": "Data de validade do cartão",
   "label_happy_hour_start": "Início do happy hour",
   "label_happy_hour_end": "Fim do happy hour",
-  "hint_happy_hour": "Ganhe 2 carimbos em vez de 1. Limpe ambos para desativar.",
+  "hint_happy_hour": "Dobra os carimbos durante o happy hour. Limpe ambos os campos para desativar.",
   "label_remind_days": "Lembrar após inatividade (dias)",
   "placeholder_remind_days": "ex: 14",
-  "hint_remind_days": "Notificação local se não houver visita neste número de dias (Máx. 365).",
+  "hint_remind_days": "Traga clientes de volta com um lembrete após este número de dias (Máx. 365).",
   "btn_create_qr": "Obter QR da Loja",
 
   "step3_title": "Seu QR Code",
   "sec_mode_basic": "Basic",
   "sec_mode_simple": "Simple",
   "sec_mode_secure": "Secure",
-  "sec_desc_basic": "Baixa segurança – imprima uma vez e nunca altere. Ideal para áreas de baixo tráfego onde fraudes são improváveis.",
-  "sec_desc_simple": "Segurança média – QR vinculado à data impede reutilização em outro dia. Requer impressão diária.",
-  "sec_desc_secure": "Alta segurança – assinado criptograficamente. O app verifica cada escaneamento com sua chave privada. Ideal para locais movimentados.",
+  "sec_desc_basic": "Segurança baixa – Os clientes só podem carimbar uma vez por dia. Seu QR code nunca muda, então você o imprime uma vez e o usa para sempre. Sem verificação de data, localização ou assinatura. Ideal para áreas de baixo tráfego onde a fraude não é uma preocupação.",
+  "sec_desc_simple": "Segurança média – Os clientes só podem carimbar uma vez por dia. Os QR codes expiram diariamente e exigem que os clientes estejam fisicamente perto da sua loja para carimbar. Impede a reutilização de QR antigos e o compartilhamento de capturas de tela. Requer atualização diária do QR (atualize a página ou imprima um novo). Recomendado para a maioria das lojas.",
+  "sec_desc_secure": "Segurança alta – Toda a proteção do modo Simple, mais a assinatura criptográfica que impede adulteração e falsificação de QR. O aplicativo verifica criptograficamente cada escaneamento contra a chave privada da sua loja. Requer atualização diária do QR (atualize a página ou imprima um novo). Perfeito para lojas movimentadas e de alto valor onde a prevenção de fraudes é crítica.",
   "btn_print_today": "Imprimir QR de Hoje",
   "btn_print_weekly": "Imprimir Lote de 7 Dias",
   "btn_backup": "Backup",
@@ -112,11 +113,11 @@
   "isp_4_title": "Divisórias & Prateleiras",
   "isp_4_desc": "Expositores acrílicos em divisórias ou áreas de espera para máxima visibilidade.",
 
-  "marquee_example_1": "Moe's Coffee Shop (Nova York)",
-  "marquee_example_2": "Bäckerei & Café Weber (Berlim)",
-  "marquee_example_3": "Apex Fitness Studio (Austin)",
-  "marquee_example_4": "Le Petit Bistro (Paris)",
-  "marquee_example_5": "Craft Beer Bar (Munique)",
+  "marquee_example_1": "(Nova York)",
+  "marquee_example_2": "(Berlim)",
+  "marquee_example_3": "(Austin)",
+  "marquee_example_4": "(Paris)",
+  "marquee_example_5": "(Munique)",
 
   "get_redirect_text": "Redirecionando para a loja de aplicativos...",
 
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "Termos de Serviço – Construtor de Lojas",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }

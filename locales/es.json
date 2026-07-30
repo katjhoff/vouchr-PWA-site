@@ -1,6 +1,6 @@
 {
-  "page_title": "Vouchr: Tarjeta de Lealtad Digital",
-
+  "page_title": "Vouchr: Creador de Tiendas",
+  
   "nav_home": "INICIO",
   "nav_features": "Características",
   "nav_pricing": "Precios",
@@ -37,14 +37,15 @@
 
   "pricing_title": "Cero Costos. Sin Suscripciones.",
   "pricing_sub": "Creemos que las herramientas de lealtad deben empoderar a los pequeños negocios, no gravarlos.",
-  "price_tag": "0 €",
+  "price_tag": "0",
   "pricing_item1": "Pases Activos Ilimitados",
-  "pricing_item2": "Apple Wallet nativo (Android próximamente)",
+  "pricing_item2": "Apple Wallet nativo",
+  "pricing_item_android": "Disponible en Android (Google Wallet próximamente)",
   "pricing_item3": "Reglas Automáticas de Hora Feliz",
   "pricing_item4": "Expositores Imprimibles al Instante",
   "pricing_btn": "Crear QR de Tienda",
 
-  "footer_brand": "Vouchr: Tarjeta de Lealtad Digital",
+  "footer_brand": "Vouchr: Creador de Tiendas",
   "footer_privacy": "Política de Privacidad",
   "footer_terms": "Términos de Servicio",
   "footer_contact": "Contáctanos",
@@ -64,14 +65,14 @@
   "hint_opening_time": "Alerta a los clientes cuando abres. Borrar para desactivar.",
   "label_gps_location": "Ubicación GPS",
   "placeholder_gps_location": "Latitud, Longitud",
-  "hint_gps_location": "Permite alertas localizadas en la pantalla de bloqueo cuando estén cerca.",
+  "hint_gps_location": "Envía una alerta en la pantalla de bloqueo a los clientes cercanos y evita que se obtengan sellos fuera de tu tienda.",
   "btn_skip": "Usar Valores Predeterminados",
   "btn_customize": "Personalizar Información",
 
   "step2_title": "Diseño y Recompensas",
   "label_display_name": "Nombre para mostrar",
   "placeholder_display_name": "Café de Moe",
-  "hint_display_name": "Máx. 20 caracteres.",
+  "hint_display_name": "Lo que se mostrará en la tarjeta del cliente. Máx. 20 caracteres.",
   "label_reward_desc": "Descripción de la recompensa",
   "placeholder_reward_desc": "Café gratis después de 8 sellos",
   "hint_reward_desc": "Máx. 30 caracteres (ej. Bebida gratis después de 8 sellos).",
@@ -79,19 +80,19 @@
   "label_expiry": "Fecha de vencimiento",
   "label_happy_hour_start": "Inicio de hora feliz",
   "label_happy_hour_end": "Fin de hora feliz",
-  "hint_happy_hour": "Obtén 2 sellos en lugar de 1. Borra ambos para desactivar.",
+  "hint_happy_hour": "Duplica los sellos durante la hora feliz. Borra ambos campos para desactivar.",
   "label_remind_days": "Recordatorio después de inactividad (días)",
   "placeholder_remind_days": "ej. 14",
-  "hint_remind_days": "Notificación local si no hay visita en esta cantidad de días (Máx. 365).",
+  "hint_remind_days": "Trae clientes de vuelta con un recordatorio después de esta cantidad de días (Máx. 365).",
   "btn_create_qr": "Obtener QR de Tienda",
 
   "step3_title": "Tu Código QR",
   "sec_mode_basic": "Básico",
   "sec_mode_simple": "Simple",
   "sec_mode_secure": "Seguro",
-  "sec_desc_basic": "Seguridad baja – imprimir una vez y nunca cambiar. Ideal para áreas de poco tráfico donde el fraude es poco probable.",
-  "sec_desc_simple": "Seguridad media – QR con fecha evita reutilización en otro día. Requiere impresión diaria.",
-  "sec_desc_secure": "Seguridad alta – firmado criptográficamente. La app verifica cada escaneo con tu clave privada. Ideal para ubicaciones concurridas.",
+  "sec_desc_basic": "Seguridad baja – Los clientes solo pueden sellar una vez al día. Tu código QR nunca cambia, así que lo imprimes una vez y lo usas para siempre. Sin comprobación de fecha, ubicación o firma. Ideal para áreas de bajo tráfico donde el fraude no es una preocupación.",
+  "sec_desc_simple": "Seguridad media – Los clientes solo pueden sellar una vez al día. Los códigos QR expiran diariamente y requieren que los clientes estén físicamente cerca de tu tienda para sellar. Evita la reutilización de QR antiguos y el uso compartido de capturas de pantalla. Requiere actualizar el QR diariamente (actualiza la página o imprime uno nuevo). Recomendado para la mayoría de las tiendas.",
+  "sec_desc_secure": "Seguridad alta – Toda la protección del modo Simple, más la firma criptográfica que evita la manipulación y falsificación de QR. La aplicación verifica criptográficamente cada escaneo contra la clave privada de tu tienda. Requiere actualizar el QR diariamente (actualiza la página o imprime uno nuevo). Perfecto para tiendas concurridas y de alto valor donde la prevención del fraude es crítica.",
   "btn_print_today": "Imprimir QR de Hoy",
   "btn_print_weekly": "Imprimir Lote de 7 Días",
   "btn_backup": "Copia de Seguridad",
@@ -112,11 +113,11 @@
   "isp_4_title": "Divisores y Estanterías",
   "isp_4_desc": "Expositores acrílicos en divisores de pared o áreas de espera para máxima visibilidad.",
 
-  "marquee_example_1": "Café de Moe (Nueva York)",
-  "marquee_example_2": "Bäckerei & Café Weber (Berlín)",
-  "marquee_example_3": "Apex Fitness Studio (Austin)",
-  "marquee_example_4": "Le Petit Bistro (París)",
-  "marquee_example_5": "Craft Beer Bar (Múnich)",
+  "marquee_example_1": "(Nueva York)",
+  "marquee_example_2": "(Berlín)",
+  "marquee_example_3": "(Austin)",
+  "marquee_example_4": "(París)",
+  "marquee_example_5": "(Múnich)",
 
   "get_redirect_text": "Redirigiendo a la tienda de aplicaciones...",
 
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "Términos de Servicio – Creador de Tiendas",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }

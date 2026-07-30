@@ -1,6 +1,6 @@
 {
-  "page_title": "Vouchr: Digitale Treuekarte",
-
+  "page_title": "Vouchr: Store Builder",
+  
   "nav_home": "STARTSEITE",
   "nav_features": "Funktionen",
   "nav_pricing": "Preise",
@@ -39,12 +39,13 @@
   "pricing_sub": "Wir glauben, dass Treue-Tools kleine Unternehmen stärken und nicht belasten sollten.",
   "price_tag": "0 €",
   "pricing_item1": "Unbegrenzte aktive Pässe",
-  "pricing_item2": "Apple Wallet nativ (Android folgt bald)",
+  "pricing_item2": "Apple Wallet nativ",
+  "pricing_item_android": "Verfügbar auf Android (Google Wallet kommt bald)",
   "pricing_item3": "Automatische Happy-Hour-Regeln",
   "pricing_item4": "Sofort druckbare Ständer",
   "pricing_btn": "Store QR erstellen",
 
-  "footer_brand": "Vouchr: Digitale Treuekarte",
+  "footer_brand": "Vouchr: Store Builder",
   "footer_privacy": "Datenschutz",
   "footer_terms": "AGB",
   "footer_contact": "Kontakt",
@@ -64,14 +65,14 @@
   "hint_opening_time": "Benachrichtigt Kunden, wenn Sie öffnen. Leeren, um zu deaktivieren.",
   "label_gps_location": "GPS-Standort",
   "placeholder_gps_location": "Breitengrad, Längengrad",
-  "hint_gps_location": "Ermöglicht lokale Sperrbildschirm-Alerts in der Nähe.",
+  "hint_gps_location": "Sendet eine Sperrbildschirm-Benachrichtigung an Kunden in der Nähe und verhindert das Sammeln von Stempeln außerhalb Ihres Geschäfts.",
   "btn_skip": "Standard verwenden",
   "btn_customize": "Store-Info anpassen",
 
   "step2_title": "Design & Belohnungen",
   "label_display_name": "Anzeigename",
   "placeholder_display_name": "Moe's Coffee",
-  "hint_display_name": "Max. 20 Zeichen.",
+  "hint_display_name": "Was auf der Karte des Kunden angezeigt wird. Max. 20 Zeichen.",
   "label_reward_desc": "Belohnungsbeschreibung",
   "placeholder_reward_desc": "Kostenloser Kaffee nach 8 Stempeln",
   "hint_reward_desc": "Max. 30 Zeichen (z.B. Gratisgetränk nach 8 Stempeln).",
@@ -79,19 +80,19 @@
   "label_expiry": "Ablaufdatum der Karte",
   "label_happy_hour_start": "Happy-Hour-Beginn",
   "label_happy_hour_end": "Happy-Hour-Ende",
-  "hint_happy_hour": "2 Stempel statt 1. Beide leeren, um zu deaktivieren.",
+  "hint_happy_hour": "Verdoppeln Sie die Stempel während der Happy Hour. Löschen Sie beide Felder, um zu deaktivieren.",
   "label_remind_days": "Erinnerung nach Inaktivität (Tage)",
   "placeholder_remind_days": "z.B. 14",
-  "hint_remind_days": "Lokale Benachrichtigung bei Besuchsausfall in dieser Anzahl Tage (max. 365).",
+  "hint_remind_days": "Bringen Sie Kunden mit einer Erinnerung nach dieser Anzahl von Tagen zurück (Max. 365).",
   "btn_create_qr": "Store QR abrufen",
 
   "step3_title": "Ihr QR-Code",
   "sec_mode_basic": "Basis",
   "sec_mode_simple": "Einfach",
   "sec_mode_secure": "Sicher",
-  "sec_desc_basic": "Niedrige Sicherheit – einmal drucken und nie ändern. Ideal für wenig frequentierte Bereiche, in denen Betrug unwahrscheinlich ist.",
-  "sec_desc_simple": "Mittlere Sicherheit – datumsgebundener QR verhindert Wiederverwendung an einem anderen Tag. Erfordert täglichen Druck.",
-  "sec_desc_secure": "Hohe Sicherheit – kryptografisch signiert. Die App prüft jeden Scan mit Ihrem privaten Schlüssel. Ideal für stark frequentierte Orte.",
+  "sec_desc_basic": "Niedrige Sicherheit – Kunden können nur einmal pro Tag stempeln. Ihr QR-Code ändert sich nie, also drucken Sie ihn einmal und verwenden ihn für immer. Keine Prüfung von Datum, Standort oder Signatur. Ideal für wenig frequentierte Bereiche, in denen Betrug kein Problem darstellt.",
+  "sec_desc_simple": "Mittlere Sicherheit – Kunden können nur einmal pro Tag stempeln. QR-Codes laufen täglich ab und erfordern, dass Kunden physisch in der Nähe Ihres Geschäfts sind, um zu stempeln. Verhindert die Wiederverwendung alter QR-Codes und das Teilen von Screenshots. Erfordert das tägliche Aktualisieren des QR-Codes (Seite neu laden oder neu drucken). Empfohlen für die meisten Geschäfte.",
+  "sec_desc_secure": "Hohe Sicherheit – Der gesamte Schutz des Simple-Modus, plus kryptografische Signatur, die QR-Manipulation und -Fälschung verhindert. Die App prüft jeden Scan kryptografisch gegen den privaten Schlüssel Ihres Geschäfts. Erfordert das tägliche Aktualisieren des QR-Codes (Seite neu laden oder neu drucken). Perfekt für viel frequentierte, hochwertige Geschäfte, bei denen Betrugsprävention entscheidend ist.",
   "btn_print_today": "Heutigen QR-Code drucken",
   "btn_print_weekly": "7-Tage-Stapel drucken",
   "btn_backup": "Backup",
@@ -112,11 +113,11 @@
   "isp_4_title": "Trennwände & Regale",
   "isp_4_desc": "Acryl-Ständer auf Trennwänden oder in Wartebereichen für maximale Sichtbarkeit.",
 
-  "marquee_example_1": "Moe's Coffee Shop (New York)",
-  "marquee_example_2": "Bäckerei & Café Weber (Berlin)",
-  "marquee_example_3": "Apex Fitness Studio (Austin)",
-  "marquee_example_4": "Le Petit Bistro (Paris)",
-  "marquee_example_5": "Craft Beer Bar (München)",
+  "marquee_example_1": "(New York)",
+  "marquee_example_2": "(Berlin)",
+  "marquee_example_3": "(Austin)",
+  "marquee_example_4": "(Paris)",
+  "marquee_example_5": "(München)",
 
   "get_redirect_text": "Weiterleitung zum App Store...",
 
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "Allgemeine Geschäftsbedingungen – Store Builder",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }

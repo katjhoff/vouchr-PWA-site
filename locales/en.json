@@ -1,5 +1,5 @@
 {
-  "page_title": "Vouchr: Digital Loyalty Card",
+  "page_title": "Vouchr Store Builder",
   
   "nav_home": "HOME",
   "nav_features": "Features",
@@ -16,7 +16,7 @@
   "lang_sv": "Swedish",
 
   "hero_title": "Turn casual visitors<br>into loyal regulars.",
-  "hero_subtitle": "A completely free, offline‑first loyalty engine that lives in your customers' Apple Wallet. No setup fees, no monthly bills, no internet required.",
+  "hero_subtitle": "A completely free, offline‑first loyalty engine that lives in your customers' Apple Wallet. No fees, no accounts, no monthly bills, and no internet required after initial setup.",
   "btn_start_building": "Start Building Free",
   "btn_how_it_works": "How it works",
 
@@ -39,12 +39,13 @@
   "pricing_sub": "We believe loyalty tools should empower small businesses, not tax them.",
   "price_tag": "$0",
   "pricing_item1": "Unlimited Active Passes",
-  "pricing_item2": "Apple Wallet native (Android coming soon)",
+  "pricing_item2": "Apple Wallet native",
+  "pricing_item_android": "Available on Android (Google Wallet coming soon)",
   "pricing_item3": "Automated Happy Hour Rules",
   "pricing_item4": "Instant Printable Standees",
   "pricing_btn": "Create Store QR",
 
-  "footer_brand": "Vouchr: Digital Loyalty Card",
+  "footer_brand": "Vouchr Store Builder",
   "footer_privacy": "Privacy Policy",
   "footer_terms": "Terms of Service",
   "footer_contact": "Contact Us",
@@ -64,14 +65,14 @@
   "hint_opening_time": "Alerts customers when you open for the day. Clear if unwanted.",
   "label_gps_location": "GPS Location",
   "placeholder_gps_location": "Latitude, Longitude",
-  "hint_gps_location": "Enables localized lockscreen alerts when nearby.",
+  "hint_gps_location": "Sends nearby customers a lockscreen alert and prevents stamps from being earned outside your store.",
   "btn_skip": "Use Defaults",
   "btn_customize": "Customize Store Info",
 
   "step2_title": "Design & Rewards",
   "label_display_name": "Display name",
   "placeholder_display_name": "Moe's Coffee",
-  "hint_display_name": "Max 20 characters.",
+  "hint_display_name": "What will display on the customers card. Max 20 characters.",
   "label_reward_desc": "Reward description",
   "placeholder_reward_desc": "Free coffee after 8 stamps",
   "hint_reward_desc": "Max 30 characters (e.g., Free drinks after 8 stamps).",
@@ -79,19 +80,19 @@
   "label_expiry": "Card expiry date",
   "label_happy_hour_start": "Happy hour start",
   "label_happy_hour_end": "Happy hour end",
-  "hint_happy_hour": "Earn 2 stamps instead of 1. Clear both to disable.",
+  "hint_happy_hour": "Double the stamps during happy hour. Clear both fields to turn off.",
   "label_remind_days": "Remind after inactivity (days)",
   "placeholder_remind_days": "e.g., 14",
-  "hint_remind_days": "Local notification if no visit in this many days (Max 365).",
+  "hint_remind_days": "Bring customers back with a reminder after this many days (Max 365).",
   "btn_create_qr": "Get Store QR",
 
   "step3_title": "Your QR Code",
   "sec_mode_basic": "Basic",
   "sec_mode_simple": "Simple",
   "sec_mode_secure": "Secure",
-  "sec_desc_basic": "Low security – print once and never change it. Ideal for low-traffic areas where fraud is unlikely.",
-  "sec_desc_simple": "Medium security – date-bound QR prevents reuse on a different day. Requires print refresh daily.",
-  "sec_desc_secure": "High security – cryptographically signed. The app verifies every scan against your private key. Ideal for busy locations.",
+  "sec_desc_basic": "Low security – Customers can only stamp once per day. Your QR code never changes, so you print it once and use it forever. No date, location, or signature checks. Best for low-traffic areas where fraud is not a concern.",
+  "sec_desc_simple": "Medium security – Customers can only stamp once per day. QR codes expire daily and require customers to be physically near your store to stamp. Prevents old QR reuse and screenshot sharing. Requires refreshing the QR code daily (refresh the page or print fresh). Recommended for most stores.",
+  "sec_desc_secure": "High security – All the protection of Simple mode, plus cryptographic signing that prevents QR tampering and forgery. The app cryptographically verifies every scan against your stores private key. Requires refreshing the QR code daily (refresh the page or print fresh). Perfect for busy, high-value stores where fraud prevention is critical.",
   "btn_print_today": "Print Today's QR Code",
   "btn_print_weekly": "Print 7-Day Batch",
   "btn_backup": "Backup",
@@ -112,16 +113,16 @@
   "isp_4_title": "Dividers & Shelves",
   "isp_4_desc": "Acrylic standees on partition shelves or waiting areas to maximize visibility.",
 
-  "marquee_example_1": "Moe's Coffee Shop (New York)",
-  "marquee_example_2": "Bäckerei & Café Weber (Berlin)",
-  "marquee_example_3": "Apex Fitness Studio (Austin)",
-  "marquee_example_4": "Le Petit Bistro (Paris)",
-  "marquee_example_5": "Craft Beer Bar (Munich)",
+  "marquee_example_1": "(New York)",
+  "marquee_example_2": "(Berlin)",
+  "marquee_example_3": "(Austin)",
+  "marquee_example_4": "(Paris)",
+  "marquee_example_5": "(Munich)",
 
   "get_redirect_text": "Redirecting to the app store...",
 
   "privacy_title": "Privacy Policy – Store Builder",
-  "privacy_last_updated": "Last updated: July 22, 2026",
+  "privacy_last_updated": "Last updated: July 30, 2026",
   "privacy_section1_title": "1. What We Do Not Collect",
   "privacy_section1_body": "Vouchr’s Store Builder is designed to respect your privacy. We do not require you to create an account, nor do we collect your name, email address, phone number, or any other personal identifier. No data is ever transmitted to our servers. There is no backend – the entire tool runs locally in your browser.",
   "privacy_section2_title": "2. Local Storage & Offline‑First Design",
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "Terms of Service – Store Builder",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }

@@ -1,6 +1,6 @@
 {
-  "page_title": "Vouchr: Digitalt lojalitetskort",
-
+  "page_title": "Vouchr: Butiksbyggare",
+  
   "nav_home": "HEM",
   "nav_features": "Funktioner",
   "nav_pricing": "Priser",
@@ -39,12 +39,13 @@
   "pricing_sub": "Vi tror att lojalitetsverktyg ska stärka småföretag, inte beskatta dem.",
   "price_tag": "0 kr",
   "pricing_item1": "Obegränsade aktiva pass",
-  "pricing_item2": "Apple Wallet inbyggt (Android kommer snart)",
+  "pricing_item2": "Apple Wallet inbyggt",
+  "pricing_item_android": "Tillgänglig på Android (Google Wallet kommer snart)",
   "pricing_item3": "Automatiska Happy Hour-regler",
   "pricing_item4": "Omedelbart utskrivbara stativ",
   "pricing_btn": "Skapa butiks-QR",
 
-  "footer_brand": "Vouchr: Digitalt lojalitetskort",
+  "footer_brand": "Vouchr: Butiksbyggare",
   "footer_privacy": "Integritetspolicy",
   "footer_terms": "Användarvillkor",
   "footer_contact": "Kontakta oss",
@@ -64,14 +65,14 @@
   "hint_opening_time": "Varnar kunder när du öppnar för dagen. Rensa för att inaktivera.",
   "label_gps_location": "GPS-plats",
   "placeholder_gps_location": "Latitud, Longitud",
-  "hint_gps_location": "Möjliggör lokaliserade låsskärmsaviseringar när du är i närheten.",
+  "hint_gps_location": "Skickar en låsskärmsvarning till närliggande kunder och förhindrar stämplar utanför din butik.",
   "btn_skip": "Använd standardvärden",
   "btn_customize": "Anpassa butiksinfo",
 
   "step2_title": "Design och belöningar",
   "label_display_name": "Visningsnamn",
   "placeholder_display_name": "Moe's Coffee",
-  "hint_display_name": "Max 20 tecken.",
+  "hint_display_name": "Vad som visas på kundens kort. Max 20 tecken.",
   "label_reward_desc": "Belöningsbeskrivning",
   "placeholder_reward_desc": "Gratis kaffe efter 8 stämplar",
   "hint_reward_desc": "Max 30 tecken (t.ex. Gratis dryck efter 8 stämplar).",
@@ -79,19 +80,19 @@
   "label_expiry": "Kortets utgångsdatum",
   "label_happy_hour_start": "Happy Hour start",
   "label_happy_hour_end": "Happy Hour slut",
-  "hint_happy_hour": "Få 2 stämplar istället för 1. Rensa båda för att inaktivera.",
+  "hint_happy_hour": "Dubbla stämplar under happy hour. Rensa båda fälten för att inaktivera.",
   "label_remind_days": "Påminnelse efter inaktivitet (dagar)",
   "placeholder_remind_days": "t.ex. 14",
-  "hint_remind_days": "Lokal avisering om inget besök på detta antal dagar (max 365).",
+  "hint_remind_days": "Få tillbaka kunder med en påminnelse efter detta antal dagar (Max 365).",
   "btn_create_qr": "Hämta butiks-QR",
 
   "step3_title": "Din QR-kod",
   "sec_mode_basic": "Basic",
   "sec_mode_simple": "Simple",
   "sec_mode_secure": "Secure",
-  "sec_desc_basic": "Låg säkerhet – skriv ut en gång och ändra den aldrig. Idealisk för områden med låg trafik där bedrägeri är osannolikt.",
-  "sec_desc_simple": "Medelhög säkerhet – datumbunden QR förhindrar återanvändning en annan dag. Kräver daglig uppdatering av utskrift.",
-  "sec_desc_secure": "Hög säkerhet – kryptografiskt signerad. Appen verifierar varje skanning mot din privata nyckel. Idealisk för mycket trafikerade platser.",
+  "sec_desc_basic": "Låg säkerhet – Kunder kan bara stämpla en gång per dag. Din QR-kod ändras aldrig, så du skriver ut den en gång och använder den för alltid. Ingen datum-, plats- eller signaturkontroll. Idealisk för lågtrafikområden där bedrägeri inte är ett problem.",
+  "sec_desc_simple": "Medelsäkerhet – Kunder kan bara stämpla en gång per dag. QR-koder löper ut dagligen och kräver att kunder är fysiskt nära din butik för att stämpla. Förhindrar återanvändning av gamla QR-koder och delning av skärmbilder. Kräver daglig uppdatering av QR (uppdatera sidan eller skriv ut en ny). Rekommenderas för de flesta butiker.",
+  "sec_desc_secure": "Hög säkerhet – Allt skydd från Simple-läget, plus kryptografisk signatur som förhindrar manipulering och förfalskning av QR. Appen verifierar kryptografiskt varje skanning mot din butiks privata nyckel. Kräver daglig uppdatering av QR (uppdatera sidan eller skriv ut en ny). Perfekt för trafikerade, högvärdiga butiker där bedrägeriförebyggande är avgörande.",
   "btn_print_today": "Skriv ut dagens QR-kod",
   "btn_print_weekly": "Skriv ut 7-dagars batch",
   "btn_backup": "Säkerhetskopiera",
@@ -112,11 +113,11 @@
   "isp_4_title": "Avdelare & hyllor",
   "isp_4_desc": "Akrylställ på avdelarväggar eller i väntområden för maximal synlighet.",
 
-  "marquee_example_1": "Moe's Coffee Shop (New York)",
-  "marquee_example_2": "Bäckerei & Café Weber (Berlin)",
-  "marquee_example_3": "Apex Fitness Studio (Austin)",
-  "marquee_example_4": "Le Petit Bistro (Paris)",
-  "marquee_example_5": "Craft Beer Bar (München)",
+  "marquee_example_1": "(New York)",
+  "marquee_example_2": "(Berlin)",
+  "marquee_example_3": "(Austin)",
+  "marquee_example_4": "(Paris)",
+  "marquee_example_5": "(München)",
 
   "get_redirect_text": "Omdirigerar till app store...",
 
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "Användarvillkor – Butiksbyggare",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }

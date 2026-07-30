@@ -1,6 +1,6 @@
 {
-  "page_title": "Vouchr: デジタルロイヤルティカード",
-
+  "page_title": "Vouchr: ストアビルダー",
+  
   "nav_home": "ホーム",
   "nav_features": "機能",
   "nav_pricing": "価格",
@@ -39,12 +39,13 @@
   "pricing_sub": "ロイヤルティツールは中小企業を支援し、負担にするべきではないと信じています。",
   "price_tag": "￥0",
   "pricing_item1": "無制限のアクティブパス",
-  "pricing_item2": "Apple Walletネイティブ（Android版近日公開）",
+  "pricing_item2": "Apple Walletネイティブ",
+  "pricing_item_android": "Androidで利用可能（Google Walletも近日対応）",
   "pricing_item3": "自動ハッピーアワールール",
   "pricing_item4": "即時印刷可能なスタンド",
   "pricing_btn": "店舗QRを作成",
 
-  "footer_brand": "Vouchr: デジタルロイヤルティカード",
+  "footer_brand": "Vouchr: ストアビルダー",
   "footer_privacy": "プライバシーポリシー",
   "footer_terms": "利用規約",
   "footer_contact": "お問い合わせ",
@@ -64,14 +65,14 @@
   "hint_opening_time": "営業開始時に顧客に通知します。クリアすると無効になります。",
   "label_gps_location": "GPS位置情報",
   "placeholder_gps_location": "緯度、経度",
-  "hint_gps_location": "近くにいるときにロック画面に通知を表示します。",
+  "hint_gps_location": "近くの顧客にロック画面アラートを送信し、店舗外でのスタンプ獲得を防止します。",
   "btn_skip": "デフォルトを使用",
   "btn_customize": "店舗情報をカスタマイズ",
 
   "step2_title": "デザイン＆報酬",
   "label_display_name": "表示名",
   "placeholder_display_name": "Moe's Coffee",
-  "hint_display_name": "最大20文字。",
+  "hint_display_name": "カードに表示される内容。最大20文字。",
   "label_reward_desc": "報酬の説明",
   "placeholder_reward_desc": "8スタンプでコーヒー無料",
   "hint_reward_desc": "最大30文字（例：8スタンプでドリンク無料）。",
@@ -79,19 +80,19 @@
   "label_expiry": "カード有効期限",
   "label_happy_hour_start": "ハッピーアワー開始",
   "label_happy_hour_end": "ハッピーアワー終了",
-  "hint_happy_hour": "通常1つのところ2つのスタンプが付与されます。両方をクリアすると無効になります。",
+  "hint_happy_hour": "ハッピーアワー中はスタンプが2倍になります。両方のフィールドをクリアして無効にします。",
   "label_remind_days": "非アクティブ後のリマインダー（日）",
   "placeholder_remind_days": "例：14",
-  "hint_remind_days": "この日数訪問がない場合にローカル通知を送信します（最大365日）。",
+  "hint_remind_days": "この日数後にリマインダーを送信して顧客を呼び戻します（最大365日）。",
   "btn_create_qr": "店舗QRを取得",
 
   "step3_title": "あなたのQRコード",
   "sec_mode_basic": "ベーシック",
   "sec_mode_simple": "シンプル",
   "sec_mode_secure": "セキュア",
-  "sec_desc_basic": "低セキュリティ – 一度印刷して変更しない。不正が考えにくい低トラフィックエリアに最適。",
-  "sec_desc_simple": "中セキュリティ – 日付バウンドQRにより別の日での再利用を防止。毎日の印刷更新が必要。",
-  "sec_desc_secure": "高セキュリティ – 暗号署名付き。アプリはあなたの秘密鍵に対して毎回のスキャンを検証します。混雑した場所に最適。",
+  "sec_desc_basic": "低セキュリティ – 顧客は1日1回のみスタンプを押せます。QRコードは変更されないため、一度印刷すれば永久に使用可能です。日付、位置情報、署名のチェックはありません。詐欺の懸念が少ない低トラフィックエリアに最適です。",
+  "sec_desc_simple": "中セキュリティ – 顧客は1日1回のみスタンプを押せます。QRコードは毎日期限切れとなり、スタンプを押すには顧客が店舗の物理的に近くにいる必要があります。古いQRの再利用やスクリーンショット共有を防止します。QRコードの毎日の更新が必要です（ページを更新するか、新しく印刷）。ほとんどの店舗に推奨します。",
+  "sec_desc_secure": "高セキュリティ – シンプルモードのすべての保護に加え、QRの改ざんや偽造を防ぐ暗号署名を追加。アプリはすべてのスキャンを店舗の秘密鍵に対して暗号検証します。QRコードの毎日の更新が必要です（ページを更新するか、新しく印刷）。詐欺防止が重要な混雑した高価値店舗に最適です。",
   "btn_print_today": "今日のQRコードを印刷",
   "btn_print_weekly": "7日分を一括印刷",
   "btn_backup": "バックアップ",
@@ -112,11 +113,11 @@
   "isp_4_title": "仕切り＆棚",
   "isp_4_desc": "仕切り棚や待合エリアのアクリルスタンドで、視認性を最大化。",
 
-  "marquee_example_1": "Moe's Coffee Shop (ニューヨーク)",
-  "marquee_example_2": "Bäckerei & Café Weber (ベルリン)",
-  "marquee_example_3": "Apex Fitness Studio (オースティン)",
-  "marquee_example_4": "Le Petit Bistro (パリ)",
-  "marquee_example_5": "Craft Beer Bar (ミュンヘン)",
+  "marquee_example_1": "(ニューヨーク)",
+  "marquee_example_2": "(ベルリン)",
+  "marquee_example_3": "(オースティン)",
+  "marquee_example_4": "(パリ)",
+  "marquee_example_5": "(ミュンヘン)",
 
   "get_redirect_text": "アプリストアにリダイレクト中...",
 
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "利用規約 – ストアビルダー",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }

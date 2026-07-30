@@ -1,6 +1,6 @@
 {
-  "page_title": "Vouchr: Carte de Fidélité Numérique",
-
+  "page_title": "Vouchr : Créateur de Boutique",
+  
   "nav_home": "ACCUEIL",
   "nav_features": "Fonctionnalités",
   "nav_pricing": "Tarifs",
@@ -39,12 +39,13 @@
   "pricing_sub": "Nous croyons que les outils de fidélisation devraient responsabiliser les petites entreprises, pas les taxer.",
   "price_tag": "0 €",
   "pricing_item1": "Passes Actifs Illimités",
-  "pricing_item2": "Apple Wallet natif (Android bientôt disponible)",
+  "pricing_item2": "Apple Wallet natif",
+  "pricing_item_android": "Disponible sur Android (Google Wallet bientôt)",
   "pricing_item3": "Règles Automatiques d'Heure Heureuse",
   "pricing_item4": "Présentoirs Imprimables Instantanément",
   "pricing_btn": "Créer le QR de la boutique",
 
-  "footer_brand": "Vouchr : Carte de Fidélité Numérique",
+  "footer_brand": "Vouchr : Créateur de Boutique",
   "footer_privacy": "Politique de Confidentialité",
   "footer_terms": "Conditions d'Utilisation",
   "footer_contact": "Contactez-nous",
@@ -64,14 +65,14 @@
   "hint_opening_time": "Alerte les clients lorsque vous ouvrez. Effacer pour désactiver.",
   "label_gps_location": "Localisation GPS",
   "placeholder_gps_location": "Latitude, Longitude",
-  "hint_gps_location": "Permet des alertes localisées sur l'écran de verrouillage à proximité.",
+  "hint_gps_location": "Envoie une alerte sur l'écran de verrouillage aux clients à proximité et empêche l'obtention de tampons en dehors de votre boutique.",
   "btn_skip": "Utiliser les Valeurs Par Défaut",
   "btn_customize": "Personnaliser les Infos",
 
   "step2_title": "Design et Récompenses",
   "label_display_name": "Nom affiché",
   "placeholder_display_name": "Café de Moe",
-  "hint_display_name": "Max. 20 caractères.",
+  "hint_display_name": "Ce qui s'affichera sur la carte du client. Max. 20 caractères.",
   "label_reward_desc": "Description de la récompense",
   "placeholder_reward_desc": "Café gratuit après 8 tampons",
   "hint_reward_desc": "Max. 30 caractères (ex. Boisson gratuite après 8 tampons).",
@@ -79,19 +80,19 @@
   "label_expiry": "Date d'expiration de la carte",
   "label_happy_hour_start": "Début de l'heure heureuse",
   "label_happy_hour_end": "Fin de l'heure heureuse",
-  "hint_happy_hour": "Obtenez 2 tampons au lieu d'1. Effacez les deux pour désactiver.",
+  "hint_happy_hour": "Double les tampons pendant l'heure heureuse. Effacez les deux champs pour désactiver.",
   "label_remind_days": "Rappel après inactivité (jours)",
   "placeholder_remind_days": "ex. 14",
-  "hint_remind_days": "Notification locale si aucune visite dans ce nombre de jours (Max. 365).",
+  "hint_remind_days": "Faites revenir les clients avec un rappel après ce nombre de jours (Max. 365).",
   "btn_create_qr": "Obtenir le QR de la boutique",
 
   "step3_title": "Votre Code QR",
   "sec_mode_basic": "Basique",
   "sec_mode_simple": "Simple",
   "sec_mode_secure": "Sécurisé",
-  "sec_desc_basic": "Sécurité faible – imprimez une fois et ne changez jamais. Idéal pour les zones à faible trafic où la fraude est improbable.",
-  "sec_desc_simple": "Sécurité moyenne – QR lié à la date pour éviter la réutilisation un autre jour. Nécessite une impression quotidienne.",
-  "sec_desc_secure": "Sécurité élevée – signé cryptographiquement. L'application vérifie chaque scan avec votre clé privée. Idéal pour les endroits très fréquentés.",
+  "sec_desc_basic": "Sécurité faible – Les clients ne peuvent tamponner qu'une fois par jour. Votre code QR ne change jamais, vous l'imprimez une fois et l'utilisez pour toujours. Pas de vérification de date, de localisation ou de signature. Idéal pour les zones à faible trafic où la fraude n'est pas une préoccupation.",
+  "sec_desc_simple": "Sécurité moyenne – Les clients ne peuvent tamponner qu'une fois par jour. Les QR expirent quotidiennement et exigent que les clients soient physiquement près de votre boutique pour tamponner. Empêche la réutilisation d'anciens QR et le partage de captures d'écran. Nécessite de rafraîchir le QR quotidiennement (rafraîchissez la page ou imprimez un nouveau). Recommandé pour la plupart des boutiques.",
+  "sec_desc_secure": "Sécurité élevée – Toute la protection du mode Simple, plus la signature cryptographique qui empêche la falsification et la contrefaçon des QR. L'application vérifie cryptographiquement chaque scan contre la clé privée de votre boutique. Nécessite de rafraîchir le QR quotidiennement (rafraîchissez la page ou imprimez un nouveau). Parfait pour les boutiques très fréquentées et à forte valeur où la prévention de la fraude est critique.",
   "btn_print_today": "Imprimer le QR d'Aujourd'hui",
   "btn_print_weekly": "Imprimer le Lot de 7 Jours",
   "btn_backup": "Sauvegarder",
@@ -112,11 +113,11 @@
   "isp_4_title": "Cloisons et Étagères",
   "isp_4_desc": "Présentoirs acryliques sur les cloisons ou dans les zones d'attente pour maximiser la visibilité.",
 
-  "marquee_example_1": "Café de Moe (New York)",
-  "marquee_example_2": "Bäckerei & Café Weber (Berlin)",
-  "marquee_example_3": "Apex Fitness Studio (Austin)",
-  "marquee_example_4": "Le Petit Bistro (Paris)",
-  "marquee_example_5": "Craft Beer Bar (Munich)",
+  "marquee_example_1": "(New York)",
+  "marquee_example_2": "(Berlin)",
+  "marquee_example_3": "(Austin)",
+  "marquee_example_4": "(Paris)",
+  "marquee_example_5": "(Munich)",
 
   "get_redirect_text": "Redirection vers l'App Store...",
 
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "Conditions d'Utilisation – Créateur de Boutique",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }

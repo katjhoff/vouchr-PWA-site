@@ -1,6 +1,6 @@
 {
-  "page_title": "Vouchr: 디지털 로열티 카드",
-
+  "page_title": "Vouchr: 스토어 빌더",
+  
   "nav_home": "홈",
   "nav_features": "기능",
   "nav_pricing": "가격",
@@ -39,12 +39,13 @@
   "pricing_sub": "로열티 도구는 소상공인을 지원하고 세금을 부과해서는 안 된다고 믿습니다.",
   "price_tag": "₩0",
   "pricing_item1": "무제한 활성 패스",
-  "pricing_item2": "Apple Wallet 네이티브 (Android 곧 출시)",
+  "pricing_item2": "Apple Wallet 네이티브",
+  "pricing_item_android": "Android에서 사용 가능 (Google Wallet 곧 제공)",
   "pricing_item3": "자동 해피아워 규칙",
   "pricing_item4": "즉시 인쇄 가능한 스탠드",
   "pricing_btn": "매장 QR 생성",
 
-  "footer_brand": "Vouchr: 디지털 로열티 카드",
+  "footer_brand": "Vouchr: 스토어 빌더",
   "footer_privacy": "개인정보 처리방침",
   "footer_terms": "이용약관",
   "footer_contact": "문의하기",
@@ -64,14 +65,14 @@
   "hint_opening_time": "영업 시작 시 고객에게 알림을 보냅니다. 비우면 비활성화됩니다.",
   "label_gps_location": "GPS 위치",
   "placeholder_gps_location": "위도, 경도",
-  "hint_gps_location": "근처에 있을 때 잠금 화면 알림을 활성화합니다.",
+  "hint_gps_location": "근처 고객에게 잠금 화면 알림을 보내고 매장 외부에서 스탬프 적립을 방지합니다.",
   "btn_skip": "기본값 사용",
   "btn_customize": "매장 정보 맞춤설정",
 
   "step2_title": "디자인 및 보상",
   "label_display_name": "표시 이름",
   "placeholder_display_name": "Moe's Coffee",
-  "hint_display_name": "최대 20자.",
+  "hint_display_name": "고객 카드에 표시될 내용. 최대 20자.",
   "label_reward_desc": "보상 설명",
   "placeholder_reward_desc": "스탬프 8개 모으면 커피 무료",
   "hint_reward_desc": "최대 30자 (예: 스탬프 8개 모으면 음료 무료).",
@@ -79,19 +80,19 @@
   "label_expiry": "카드 만료일",
   "label_happy_hour_start": "해피아워 시작",
   "label_happy_hour_end": "해피아워 종료",
-  "hint_happy_hour": "1개 대신 2개의 스탬프를 적립합니다. 둘 다 비우면 비활성화됩니다.",
+  "hint_happy_hour": "해피아워 동안 스탬프가 2배로 적립됩니다. 두 필드를 모두 비우면 비활성화됩니다.",
   "label_remind_days": "비활동 후 알림 (일)",
   "placeholder_remind_days": "예: 14",
-  "hint_remind_days": "이 일수 동안 방문이 없으면 로컬 알림을 보냅니다 (최대 365일).",
+  "hint_remind_days": "이 날짜 후 알림으로 고객을 다시 유치하세요 (최대 365일).",
   "btn_create_qr": "매장 QR 받기",
 
   "step3_title": "QR 코드",
   "sec_mode_basic": "Basic",
   "sec_mode_simple": "Simple",
   "sec_mode_secure": "Secure",
-  "sec_desc_basic": "낮은 보안 – 한 번 인쇄하고 변경하지 않음. 사기 가능성이 낮은 저트래픽 지역에 이상적.",
-  "sec_desc_simple": "중간 보안 – 날짜 바운드 QR로 다른 날짜에 재사용 방지. 매일 인쇄 갱신 필요.",
-  "sec_desc_secure": "높은 보안 – 암호화 서명. 앱이 개인 키로 모든 스캔을 검증합니다. 혼잡한 장소에 이상적.",
+  "sec_desc_basic": "낮은 보안 – 고객은 하루에 한 번만 스탬프를 찍을 수 있습니다. QR 코드는 변경되지 않으므로 한 번 인쇄하면 영구적으로 사용할 수 있습니다. 날짜, 위치 또는 서명 확인 없음. 사기 우려가 적은 저트래픽 지역에 이상적입니다.",
+  "sec_desc_simple": "중간 보안 – 고객은 하루에 한 번만 스탬프를 찍을 수 있습니다. QR 코드는 매일 만료되며 스탬프를 찍으려면 고객이 매장 근처에 물리적으로 있어야 합니다. 오래된 QR 재사용 및 스크린샷 공유를 방지합니다. QR 코드를 매일 업데이트해야 합니다 (페이지 새로고침 또는 새로 인쇄). 대부분의 매장에 권장합니다.",
+  "sec_desc_secure": "높은 보안 – 심플 모드의 모든 보호 기능에 더해 QR 변조 및 위조를 방지하는 암호화 서명을 추가합니다. 앱은 모든 스캔을 매장의 개인 키에 대해 암호화 방식으로 검증합니다. QR 코드를 매일 업데이트해야 합니다 (페이지 새로고침 또는 새로 인쇄). 사기 방지가 중요한 혼잡한 고가치 매장에 완벽합니다.",
   "btn_print_today": "오늘의 QR 코드 인쇄",
   "btn_print_weekly": "7일 배치 인쇄",
   "btn_backup": "백업",
@@ -112,11 +113,11 @@
   "isp_4_title": "파티션 및 선반",
   "isp_4_desc": "파티션 벽이나 대기 공간의 아크릴 스탠드로 가시성을 극대화합니다.",
 
-  "marquee_example_1": "Moe's Coffee Shop (뉴욕)",
-  "marquee_example_2": "Bäckerei & Café Weber (베를린)",
-  "marquee_example_3": "Apex Fitness Studio (오스틴)",
-  "marquee_example_4": "Le Petit Bistro (파리)",
-  "marquee_example_5": "Craft Beer Bar (뮌헨)",
+  "marquee_example_1": "(뉴욕)",
+  "marquee_example_2": "(베를린)",
+  "marquee_example_3": "(오스틴)",
+  "marquee_example_4": "(파리)",
+  "marquee_example_5": "(뮌헨)",
 
   "get_redirect_text": "앱 스토어로 리디렉션 중...",
 
@@ -137,7 +138,7 @@
   "privacy_section7_title": "7. California Privacy Rights (CCPA)",
   "privacy_section7_body": "Because we collect no personal information, there is no data to delete, disclose, or sell. If you are a California resident, you can be confident that no sale or sharing of personal information occurs.",
   "privacy_contact_title": "8. Contact Us",
-  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: help@pocketenginestudio.com",
+  "privacy_contact_body": "If you have any questions about this privacy policy, you may contact us at: develop@pocketenginestudio.com",
 
   "terms_title": "이용약관 – 스토어 빌더",
   "terms_last_updated": "Last updated: July 22, 2026",
@@ -161,5 +162,5 @@
   "terms_section9_title": "9. Changes to Terms",
   "terms_section9_body": "We may update these terms at any time. Continued use of the Service after changes constitutes your acceptance of the new terms.",
   "terms_section10_title": "10. Contact",
-  "terms_section10_body": "If you have any questions about these terms, you may contact us at: help@pocketenginestudio.com"
+  "terms_section10_body": "If you have any questions about these terms, you may contact us at: develop@pocketenginestudio.com"
 }
