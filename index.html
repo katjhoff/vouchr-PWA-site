@@ -70,11 +70,25 @@
     font-weight: 700;
     font-size: 1rem;
     color: var(--ios-black);
+    word-break: break-word;
 }
 .install-banner .banner-sub {
     font-size: 0.9rem;
     color: var(--ios-subtext);
     line-height: 1.4;
+    word-break: break-word;
+}
+@media (max-width: 576px) {
+    .install-banner .banner-title {
+        font-size: 0.85rem;
+    }
+    .install-banner .banner-sub {
+        font-size: 0.75rem;
+    }
+    .install-banner .btn-install {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
 }
 .install-banner .banner-actions {
     display: flex;
@@ -169,10 +183,35 @@
         .hero-title {
             font-size: 4.5rem; font-weight: 800; letter-spacing: -2px;
             line-height: 1.05; color: var(--ios-black); margin-bottom: 1.5rem;
+            word-break: break-word;
+            hyphens: auto;
         }
         .hero-subtitle {
             font-size: 1.4rem; color: var(--ios-subtext); max-width: 600px;
             margin: 0 auto 3rem; line-height: 1.4; font-weight: 400; letter-spacing: -0.2px;
+            word-break: break-word;
+            hyphens: auto;
+            padding: 0 16px;
+        }
+        @media (max-width: 768px) {
+            .hero-title {
+            font-size: 2.8rem;
+            letter-spacing: -1px;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+                padding: 0 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.2rem;
+                letter-spacing: -0.5px;
+            }
+            .hero-subtitle {
+                font-size: 1rem;
+                padding: 0 16px;
+            }
         }
 
         /* Custom Buttons */
@@ -201,8 +240,28 @@
             color: var(--ios-black); display: inline-flex; align-items: center; justify-content: center;
             font-size: 1.8rem; margin-bottom: 1.5rem;
         }
-        .feature-title { font-weight: 600; font-size: 1.3rem; margin-bottom: 0.8rem; }
-        .feature-desc { color: var(--ios-subtext); font-size: 1rem; line-height: 1.5; }
+        .feature-title { 
+            font-weight: 600; 
+            font-size: 1.3rem; 
+            margin-bottom: 0.8rem; 
+            word-break: break-word;
+            hyphens: auto;
+        }
+        .feature-desc { 
+            color: var(--ios-subtext); 
+            font-size: 1rem; 
+            line-height: 1.5; 
+            word-break: break-word;
+            hyphens: auto;
+        }
+        @media (max-width: 576px) {
+            .feature-title {
+            font-size: 1.1rem;
+            }
+            .feature-desc {
+                font-size: 0.9rem;
+            }
+        }
 
         /* Pricing Section */
         .pricing-section { padding: 8rem 0; background: #F5F5F7; }
@@ -211,7 +270,25 @@
             text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.04);
         }
         .price-tag { font-size: 5rem; font-weight: 800; color: var(--ios-black); letter-spacing: -2px; line-height: 1; margin: 1.5rem 0; }
-        .pricing-list li { margin-bottom: 1rem; font-size: 1.1rem; color: var(--ios-subtext); display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .pricing-list li { 
+            margin-bottom: 1rem; 
+            font-size: 1.1rem; 
+            color: var(--ios-subtext); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 10px; 
+            text-align: center;
+            word-break: break-word;
+            hyphens: auto;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 576px) {
+            .pricing-list li {
+                font-size: 0.9rem;
+                padding: 0 8px;
+            }
+        }
         .pricing-list i { color: var(--ios-blue); font-size: 1.2rem; }
 
         /* Marquee */
@@ -220,13 +297,69 @@
             padding: 2rem 0; white-space: nowrap; border-top: 1px solid var(--ios-border);
         }
         .marquee-track { display: inline-flex; gap: 4rem; animation: marquee 30s linear infinite; }
-        .marquee-item { display: flex; align-items: center; gap: 12px; font-weight: 500; color: var(--ios-subtext); font-size: 1.1rem; }
+        .marquee-item { display: flex; align-items: center; gap: 12px; font-weight: 500; color: var(--ios-subtext); font-size: 1.1rem; white-space: nowrap; }
+        @media (max-width: 576px) {
+            .marquee-item {
+                font-size: 0.8rem;
+                gap: 8px;
+            }
+            .marquee-track {
+                gap: 2rem; /* Reduce gap on small screens */
+            }
+        }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
         /* Footer */
         footer { background: #FFFFFF; border-top: 1px solid var(--ios-border); padding: 4rem 0 2rem; }
-        .footer-links a { color: var(--ios-subtext); text-decoration: none; font-size: 0.9rem; margin: 0 12px; transition: color 0.2s; }
+        .footer-links a { color: var(--ios-subtext); text-decoration: none; font-size: 0.9rem; margin: 0 12px; transition: color 0.2s; word-break: break-word; display: inline-block; }
+        @media (max-width: 576px) {
+            .footer-links a {
+                font-size: 0.7rem;
+                margin: 0 6px;
+            }
+        }
         .footer-links a:hover { color: var(--ios-black); }
+        /* --- GLOBAL MOBILE FIXES FOR ALL LANGUAGES --- */
+@media (max-width: 768px) {
+    /* Section headers */
+    .section-title {
+        font-size: 2rem;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 16px;
+    }
+    /* Pricing card */
+    .pricing-card {
+        padding: 2rem 1.5rem;
+    }
+    .price-tag {
+        font-size: 3.5rem;
+    }
+    /* Cards in features section */
+    .col-lg-4 .p-4 {
+        padding: 1.25rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+    .btn-ios-primary, .btn-ios-outline {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+    .pricing-card {
+        padding: 1.5rem 1rem;
+    }
+    .price-tag {
+        font-size: 2.8rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -273,7 +406,7 @@
 
 <section class="hero-section">
     <div class="container px-4">
-        <h1 class="hero-title" data-i18n="hero_title">Turn casual visitors<br>into loyal regulars.</h1>
+        <h1 class="hero-title" data-i18n="hero_title">Turn casual visitors into loyal regulars.</h1>
         <p class="hero-subtitle" data-i18n="hero_subtitle">A completely free, offline‑first loyalty engine that lives in your customers' Apple Wallet. No fees, no accounts, no monthly bills, and no internet required after initial setup.</p>
         <div class="d-flex justify-content-center gap-3">
             <a href="builder.html" class="btn-ios-primary" data-i18n="btn_start_building">Start Building Free</a>
