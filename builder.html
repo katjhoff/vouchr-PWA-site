@@ -743,7 +743,7 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
         
         const payloadStr = JSON.stringify(payload);
         const encodedPayload = encodeURIComponent(payloadStr);
-        const qrUrl = `https://arguably.pocketenginestudio.com/get.html?payload=${encodedPayload}`;
+        const qrUrl = `https://vouchrdigital.pocketenginestudio.com/get.html?payload=${encodedPayload}`;
         
         new QRCode(container, {
             text: qrUrl, width: 340, height: 340, colorDark: "#1D1D1F", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H
