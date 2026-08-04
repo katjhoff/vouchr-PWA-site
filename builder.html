@@ -754,7 +754,13 @@ async function createStore(skip) {
         pk: nacl.util.encodeBase64(keyPair.publicKey),
         tz: Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC',
         ct: { 
-            ...
+            dn: skip ? sn : (document.getElementById('displayName').value || sn),
+            rd: skip ? 'Reward' : document.getElementById('rewardDesc').value,
+            ot: skip ? null : (document.getElementById('openingTime').value || null),
+            exp: skip ? null : (document.getElementById('expiryDate').value || null),
+            bh: skip ? null : (hhs && hhe ? [hhs, hhe] : null),
+            rad: skip ? null : (remindInput ? Math.min(parseInt(remindInput), 365).toString() : null),
+            t: activeType
         }
     };
 
