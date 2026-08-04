@@ -21,7 +21,7 @@
         /* Mobile hamburger fix for builder.html */
 .navbar-custom .navbar-toggler {
     padding: 0.25rem 0.5rem;
-    color: var(--ios-text);
+    color: var(--text);
 }
 .navbar-custom .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(29, 29, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -134,6 +134,21 @@
         }
         .btn-ios-outline { background: var(--ios-card-bg); color: var(--ios-text); box-shadow: 0 2px 10px rgba(0,0,0,0.05); font-weight: 700; font-size: 1.1rem; padding: 16px 24px; border-radius: 16px; border: none; width: 100%; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px;}
         .btn-ios-outline:hover { transform: scale(0.98); background: #FAFAFA; }
+        #btnPrintCombined {
+            white-space: normal;
+            word-break: break-word;
+            text-align: center;
+            padding: 16px 12px;
+            font-size: 1rem;
+            gap: 6px;
+        }
+
+        @media (max-width: 576px) {
+            #btnPrintCombined {
+                font-size: 0.9rem;
+                padding: 14px 10px;
+            }
+        }
         
         .back-btn { color: var(--ios-subtext); cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; margin-bottom: 2rem; transition: color 0.2s; font-size: 1.05rem; }
         .back-btn:hover { color: var(--ios-text); }
@@ -180,6 +195,21 @@
         .tip-card { text-align: left; height: 100%; display: flex; flex-direction: column;}
         .tip-card h3 { font-weight: 700; font-size: 1.4rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--ios-text); }
         .tip-card p { font-size: 1.05rem; color: var(--ios-subtext); line-height: 1.5; font-weight: 400; }
+        #btnPrintCombined {
+            white-space: normal;
+            word-break: break-word;
+            text-align: center;
+            padding: 16px 12px;
+            font-size: 1rem;
+            gap: 6px;
+        }
+
+        @media (max-width: 576px) {
+            #btnPrintCombined {
+                font-size: 0.9rem;
+                padding: 14px 10px;
+            }
+        }
         
         /* Image Placeholders - Ready for real images */
         .image-placeholder {
@@ -198,6 +228,21 @@
         .btn-backup:hover, .btn-restore:hover { background: #E5E5EA; color: var(--ios-text); }
         #restoreInput { display: none; }
         .backup-status { font-size: 0.85rem; font-weight: 500; margin-top: 8px; text-align: center; }
+        #btnPrintCombined {
+            white-space: normal;
+            word-break: break-word;
+            text-align: center;
+            padding: 16px 12px;
+            font-size: 1rem;
+            gap: 6px;
+        }
+
+        @media (max-width: 576px) {
+            #btnPrintCombined {
+                font-size: 0.9rem;
+                padding: 14px 10px;
+            }
+        }
 
         /* Footer Marquee */
         .marquee-wrapper { width: 100%; overflow: hidden; background: #FFFFFF; padding: 2rem 0; white-space: nowrap; border-top: 1px solid #E5E5EA; }
