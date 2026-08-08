@@ -18,42 +18,44 @@
             --ios-black: #1D1D1F;
             --glass-bg: rgba(255, 255, 255, 0.72);
         }
-        /* Mobile hamburger fix for builder.html */
-.navbar-custom .navbar-toggler {
-    padding: 0.25rem 0.5rem;
-    color: var(--ios-text);
-}
-.navbar-custom .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(29, 29, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.navbar-custom .navbar-collapse {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 1rem;
-    border-radius: 16px;
-    margin-top: 0.5rem;
-    border: 1px solid rgba(0,0,0,0.05);
-}
-.navbar-custom .nav-link-custom {
-    padding: 0.5rem 0;
-    display: inline-block;
-}
-@media (min-width: 768px) {
-    .navbar-custom .navbar-collapse {
-        background: transparent;
-        backdrop-filter: none;
-        padding: 0;
-        border: none;
-        margin-top: 0;
-    }
-    .navbar-custom .nav-link-custom {
-        padding: 0;
-    }
-    .navbar-custom .d-md-none {
-        display: none !important;
-    }
-}
+        .navbar-custom .container-fluid {
+            max-width: 100%;
+        }
+        .navbar-custom .navbar-toggler {
+            padding: 0.25rem 0.5rem;
+            color: var(--ios-text);
+        }
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(29, 29, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        .navbar-custom .navbar-collapse {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 1rem;
+            border-radius: 16px;
+            margin-top: 0.5rem;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .navbar-custom .nav-link-custom {
+            padding: 0.5rem 0;
+            display: inline-block;
+        }
+        @media (min-width: 768px) {
+        .navbar-custom .navbar-collapse {
+            background: transparent;
+            backdrop-filter: none;
+            padding: 0;
+            border: none;
+            margin-top: 0;
+        }
+        .navbar-custom .nav-link-custom {
+            padding: 0;
+        }
+        .navbar-custom .d-md-none {
+            display: none !important;
+        }
+        }
 
         html { scroll-behavior: smooth; }
         body { background-color: var(--ios-bg); color: var(--ios-text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -156,6 +158,11 @@
         .back-btn { color: var(--ios-subtext); cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; margin-bottom: 2rem; transition: color 0.2s; font-size: 1rem; padding: 6px 10px; }
         .back-btn:hover { color: var(--ios-text); }
 
+        #dynamicHeaderLeft {
+            flex: 0 0 auto;
+            min-width: 100px;
+        }
+
         /* Screens */
         .wizard-screen { display: none; }
         .wizard-screen.active { display: block; animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
@@ -226,12 +233,12 @@
         .marquee-item { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--ios-subtext); font-size: 1.05rem; }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .marquee-wrapper {
-    padding: 2rem 0 3rem 0;
-}
-.marquee-wrapper + footer {
-    border-top: 1px solid var(--ios-border);
-    padding-top: 2rem;
-}
+            padding: 2rem 0 3rem 0;
+        }       
+        .marquee-wrapper + footer {
+            border-top: 1px solid var(--ios-border);
+            padding-top: 2rem;
+        }   
 
         /* Footer */
         footer { background: #FFFFFF; border-top: 1px solid var(--ios-border); padding: 4rem 0 2rem; }
@@ -242,7 +249,7 @@
 <body>
 
 <nav class="navbar-custom navbar navbar-expand-md">
-    <div class="container">
+    <div class="container-fluid px-4">
         <!-- Left Side: Dynamic Back Button Container (always visible) -->
         <div id="dynamicHeaderLeft" class="d-flex align-items-center">
             <!-- Populated dynamically by JavaScript -->
@@ -460,69 +467,8 @@
                 </div>
 
             </div>
-
-            <!-- Scroll Indicator pointing to Tips -->
-            <a href="#inspirationSection" class="scroll-down-arrow">
-                <span data-i18n="scroll_tips">Display Tips</span>
-                <i class="bi bi-chevron-down"></i>
-            </a>
         </div>
 
-        <!-- The "WOW" Inspiration Section -->
-        <div id="inspirationSection" class="inspiration-section">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-title" data-i18n="inspiration_title">Maximize Your Scans</h2>
-                    <p class="section-subtitle" data-i18n="inspiration_sub">Ideas for displaying your QR code around your store to turn walk-ins into repeat regulars. Leave the complex tech behind and focus on visibility.</p>
-                </div>
-                
-                <div class="row align-items-center g-5 mt-2">
-                    <!-- 3D Isometric Image Side -->
-                    <div class="col-lg-7">
-                        <div class="image-placeholder" style="aspect-ratio: auto; border-radius: 30px; box-shadow: 0 12px 40px rgba(0,0,0,0.1); background: transparent;">
-                            <img src="images/VOUCHRDISPLAY.png" alt="3D Isometric Store Layout" style="position: relative; border-radius: 20px; width: 100%; height: auto; display: block;">
-                        </div>
-                    </div>
-                    
-                    <!-- Strategic Placement List Side -->
-                    <div class="col-lg-5 text-start">
-                        <h3 class="fw-bold mb-4" style="color: var(--ios-black); letter-spacing: -0.5px;" data-i18n="strategic_placement_title">Strategic Placement</h3>
-                        <ul class="list-unstyled d-flex flex-column gap-4 mb-0 strategic-list">
-                            <li class="d-flex align-items-start gap-3">
-                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 36px; height: 36px; box-shadow: 0 4px 10px rgba(0,122,255,0.3);"><i class="bi bi-door-open-fill"></i></div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-5" data-i18n="isp_1_title">Street & Entrance</h5>
-                                    <p class="text-secondary mb-0" style="font-size: 1.05rem;" data-i18n="isp_1_desc">Sidewalk A-Frame signs & front glass door decals to capture foot traffic before entry.</p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start gap-3">
-                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 36px; height: 36px; box-shadow: 0 4px 10px rgba(0,122,255,0.3);"><i class="bi bi-cash-coin"></i></div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-5" data-i18n="isp_2_title">Order Point</h5>
-                                    <p class="text-secondary mb-0" style="font-size: 1.05rem;" data-i18n="isp_2_desc">Front counter acrylics & digital POS overhead displays to capture impulse scans.</p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start gap-3">
-                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 36px; height: 36px; box-shadow: 0 4px 10px rgba(0,122,255,0.3);"><i class="bi bi-cup-hot-fill"></i></div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-5" data-i18n="isp_3_title">Seating Area</h5>
-                                    <p class="text-secondary mb-0" style="font-size: 1.05rem;" data-i18n="isp_3_desc">Table tents & lounge coffee table stands for relaxed scans during the visit.</p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start gap-3">
-                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 36px; height: 36px; box-shadow: 0 4px 10px rgba(0,122,255,0.3);"><i class="bi bi-collection-fill"></i></div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-5" data-i18n="isp_4_title">Dividers & Shelves</h5>
-                                    <p class="text-secondary mb-0" style="font-size: 1.05rem;" data-i18n="isp_4_desc">Acrylic standees on partition shelves or waiting areas to maximize visibility.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer Marquee inside Step 3 so it shows at the very bottom -->
         <div class="marquee-wrapper">
             <div class="marquee-track">
                 <div class="marquee-item" data-i18n="marquee_example_1">(New York)</div>
@@ -706,7 +652,7 @@ function show(stepNum) {
     } else if (stepNum === 2) {
         headerLeft.innerHTML = `<div class="back-btn mb-0 mt-1" onclick="show(1)" style="font-size: 1rem;"><i class="bi bi-arrow-left me-1"></i> Back</div>`;
     } else if (stepNum === 3) {
-        headerLeft.innerHTML = `<div class="back-btn mb-0 mt-1" onclick="show(2)" style="font-size: 1rem;"><i class="bi bi-arrow-left me-1"></i> Back</div>`;
+        headerLeft.innerHTML = `<div class="back-btn mb-0 mt-1" onclick="show(2)" style="font-size: 1rem; padding-left: 0;"><i class="bi bi-arrow-left me-1"></i> Back</div>`;
     }
 
     window.scrollTo(0,0);
@@ -790,7 +736,11 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
             document.querySelectorAll('.segmented-option').forEach(o => o.classList.remove('active'));
             this.classList.add('active'); 
             const mode = this.dataset.mode;
-            document.getElementById('securityDesc').textContent = securityDescriptions[mode];
+            // Use translations instead of hardcoded English
+            const key = 'sec_desc_' + mode + '_fixed';
+            // Get the translated text from i18n
+            const translatedText = translations[key] || translations['sec_desc_' + mode];
+            document.getElementById('securityDesc').textContent = translatedText;
             generateQR();
         });
     });
