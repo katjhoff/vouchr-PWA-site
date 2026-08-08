@@ -3,6 +3,7 @@
     const supportedLocales = ['en', 'es', 'fr', 'de', 'ja', 'ko', 'pt', 'da', 'sv'];
     let currentLocale = 'en';
     let translations = {};
+    window.translations = translations; // <-- EXPOSE GLOBALLY
 
     // 1. Detect browser language or load from localStorage
     function detectLocale() {
@@ -20,6 +21,7 @@
             const response = await fetch(`locales/${locale}.json`);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             translations = await response.json();
+            window.translations = translations; // <-- UPDATE GLOBAL COPY
             currentLocale = locale;
             localStorage.setItem('vouchr-locale', locale);
             translatePage();
@@ -31,6 +33,7 @@
             } else {
                 // Emergency fallback if en.json fails (should not happen)
                 translations = {};
+                window.translations = translations;
                 translatePage();
             }
         }
