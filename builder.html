@@ -524,7 +524,6 @@
     function sanitize(input) { return input.replace(/[^a-zA-Z0-9\s\-'\.&\/\(\)!?_+=:,]/g, '').substring(0, 40); }
     document.getElementById('storeName').addEventListener('input', function() { 
         this.value = sanitize(this.value); 
-        // Sync and strictly enforce the 20 character limit by cutting off excess
         document.getElementById('displayName').value = this.value.substring(0, 20); 
         updatePreview(); 
     });
@@ -562,15 +561,14 @@
         alert('Geolocation is not supported by this browser.');
     }
 });
-// Accurate Private / Restricted Storage Test
-function checkStorageReliability() {
+=function checkStorageReliability() {
     try {
         const testKey = '__vouchr_test__';
         localStorage.setItem(testKey, '1');
         localStorage.removeItem(testKey);
-        return true; // Storage is fully working
+        return true;
     } catch (e) {
-        return false; // Restricted or Private Mode
+        return false;
     }
 }
 
@@ -594,7 +592,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Business Type Pills & Preview Logic
 let activeIcon = 'bi-cup-hot-fill';
 let activeType = 'cafe';
 document.querySelectorAll('.biz-pill').forEach(pill => {
@@ -736,9 +733,7 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
             document.querySelectorAll('.segmented-option').forEach(o => o.classList.remove('active'));
             this.classList.add('active'); 
             const mode = this.dataset.mode;
-            // Use translations instead of hardcoded English
             const key = 'sec_desc_' + mode + '_fixed';
-            // Get the translated text from i18n
             const translatedText = translations[key] || translations['sec_desc_' + mode];
             document.getElementById('securityDesc').textContent = translatedText;
             generateQR();
@@ -754,7 +749,6 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
             sid: storeData.sid, sn: storeData.sn, pk: storeData.pk, ct: storeData.ct, m: mode, tz: storeData.tz || 'UTC'
         };
 
-        // NEW: Ensure the location coordinates are injected into the QR payload!
         if (storeData.loc) {
             payload.loc = storeData.loc;
         }
@@ -776,7 +770,6 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
         });
     }
 
-    // Print Single
     document.getElementById('btnPrintCombined').addEventListener('click', () => {
         const c = document.querySelector('#combinedQr canvas');
         if (c) { 
@@ -901,29 +894,25 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
 </script>
 
 <script>
-    // Add to Home Screen Detection & Prompt
     (function() {
         const isStandalone = window.navigator.standalone || 
                              window.matchMedia('(display-mode: standalone)').matches;
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         
-        // Check if user has dismissed the banner before
         const bannerDismissed = localStorage.getItem('vouchr-install-dismissed') === 'true';
         
-        // Only show if NOT standalone, IN Safari (iOS), and NOT dismissed
         if (!isStandalone && isSafari && !bannerDismissed) {
             setTimeout(() => {
                 document.getElementById('installBanner').classList.add('visible');
             }, 1500);
         }
 
-        // Dismiss handler
+        
         window.dismissInstallBanner = function() {
             document.getElementById('installBanner').classList.remove('visible');
             localStorage.setItem('vouchr-install-dismissed', 'true');
         };
 
-        // Install button – shows instructions
         document.getElementById('installAppBtn').addEventListener('click', function() {
             alert(
                 '📱 How to install Vouchr on your Home Screen:\n\n' +
