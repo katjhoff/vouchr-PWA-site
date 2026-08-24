@@ -59,14 +59,14 @@
 
         html { scroll-behavior: smooth; }
         body { background-color: var(--ios-bg); color: var(--ios-text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-        
+
         /* Navbar */
         .navbar-custom { background: rgba(242, 242, 247, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; border-bottom: 1px solid rgba(60,60,67,0.1); }
         .brand-logo { font-size: 1.1rem; font-weight: 600; color: var(--ios-blue); text-decoration: none; }
-        
+
         /* App Layout */
         .app-container { max-width: 900px; margin: 3rem auto; padding: 0 20px; }
-        
+
         /* Step Indicator */
         .steps-indicator { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 2.5rem; }
         .step-dot { width: 32px; height: 32px; border-radius: 50%; background: #E5E5EA; color: var(--ios-subtext); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; transition: all 0.3s; }
@@ -93,7 +93,7 @@
         .form-control::placeholder { color: #A1A1A6; font-weight: 400; }
         .form-control:focus { background: #FFFFFF; outline: none; box-shadow: 0 0 0 4px rgba(0,122,255,0.15); }
         .input-hint { font-size: 0.85rem; color: var(--ios-subtext); margin-top: 8px; line-height: 1.4; }
-        
+
         /* Input Clear Buttons */
         .btn-clear { background: #F2F2F7; border: none; color: var(--ios-subtext); border-radius: 0 14px 14px 0; font-size: 1.1rem; padding: 0 16px; }
         .btn-clear:hover { color: #FF3B30; }
@@ -154,7 +154,7 @@
             }
         }
         .btn-ios-outline:hover { transform: scale(0.98); background: #FAFAFA; }
-        
+
         .back-btn { color: var(--ios-subtext); cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; margin-bottom: 2rem; transition: color 0.2s; font-size: 1rem; padding: 6px 10px; }
         .back-btn:hover { color: var(--ios-text); }
 
@@ -177,7 +177,7 @@
         /* ------------------------------------- */
         /* STEP 3 FULLSCREEN DASHBOARD & TIPS   */
         /* ------------------------------------- */
-        
+
         .dashboard-viewport {
             min-height: calc(100vh - 80px); /* Fits screen minus navbar */
             display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -201,11 +201,11 @@
         .inspiration-section { padding: 6rem 0; background-color: #FFFFFF; border-top: 1px solid #E5E5EA; margin-top: 2rem; }
         .section-title { font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 1rem; color: var(--ios-black); }
         .section-subtitle { font-size: 1.2rem; color: var(--ios-subtext); font-weight: 500; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-        
+
         .tip-card { text-align: left; height: 100%; display: flex; flex-direction: column;}
         .tip-card h3 { font-weight: 700; font-size: 1.4rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--ios-text); }
         .tip-card p { font-size: 1.05rem; color: var(--ios-subtext); line-height: 1.5; font-weight: 400; }
-        
+
         /* Image Placeholders - Ready for real images */
         .image-placeholder {
             width: 100%; aspect-ratio: 4/3; background-color: #F2F2F7; border-radius: 24px;
@@ -254,7 +254,7 @@
         <div id="dynamicHeaderLeft" class="d-flex align-items-center">
             <!-- Populated dynamically by JavaScript -->
         </div>
-        
+
         <!-- Right Side: Brand + Toggler -->
         <div class="d-flex align-items-center gap-2">
             <a href="index.html" class="brand-logo d-md-none" data-i18n="nav_home">HOME</a>
@@ -289,7 +289,7 @@
 </nav>
 
 <main class="flex-grow-1">
-    
+
     <!-- STEPS 1 & 2 CONTAINER -->
     <div class="app-container" id="formContainer">
         <div class="text-center">
@@ -316,7 +316,7 @@
         <div id="screen1" class="wizard-screen active">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    
+
                     <div class="ios-card">
                         <h5 class="fw-bold mb-4 fs-4" data-i18n="step1_title">Store Details</h5>
                         <div class="mb-0">
@@ -327,7 +327,7 @@
 
                     <div class="ios-card">
                         <h5 class="fw-bold mb-4 fs-4 d-flex align-items-center" data-i18n="label_location_hours">Location & Hours <span class="badge bg-light text-secondary ms-3 fs-6 fw-normal border" data-i18n="label_optional">Optional</span></h5>
-                        
+
                         <div class="mb-4">
                             <label class="form-label" data-i18n="label_opening_time">Opening time</label>
                             <div class="input-group">
@@ -360,7 +360,7 @@
         <div id="screen2" class="wizard-screen">
             <div class="row g-5">
                 <div class="col-lg-7">
-                    
+
                     <div class="ios-card">
                         <h5 class="fw-bold mb-4 fs-4" data-i18n="step2_title">Design & Rewards</h5>
                         <div class="mb-4">
@@ -418,7 +418,7 @@
                         <button class="btn-ios-primary py-3 fs-5" id="btnCreateShop" data-i18n="btn_create_qr">Get Store QR</button>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-5 d-none d-lg-block">
                     <!-- Sticky Live Preview -->
                     <div class="wallet-pass-preview" id="walletPassPreview">
@@ -437,27 +437,28 @@
 
     <!-- STEP 3: DASHBOARD & TIPS -->
     <div id="screen3" class="wizard-screen">
-        
+
         <!-- The QR Viewport -->
         <div class="dashboard-viewport px-3 pt-4">
             <div class="container d-flex flex-column align-items-center">
                 <div class="qr-stage">
                     <h3 class="fw-bold mb-4" data-i18n="step3_title">Your QR Code</h3>
-                    
+
                     <div class="segmented-control mx-auto mb-3">
                         <span class="segmented-option" data-mode="basic" data-i18n="sec_mode_basic">Basic</span>
                         <span class="segmented-option active" data-mode="simple" data-i18n="sec_mode_simple">Simple</span>
                         <span class="segmented-option" data-mode="secure" data-i18n="sec_mode_secure">Secure</span>
                     </div>
+                    <p id="securityDesc" class="security-desc mb-3" data-i18n="sec_desc_simple">Medium security – date-bound QR prevents reuse on a different day. Requires print refresh daily.</p>
                     <p id="securityDesc" class="security-desc mb-3" data-i18n="sec_desc_simple">Medium security – Customers can only stamp once per day. QR codes expire daily and require customers to be physically near your store to stamp. Prevents old QR reuse and screenshot sharing. Requires refreshing the QR code daily (refresh the page or print fresh). Recommended for most stores.</p>
-                    
+
                     <div id="combinedQr"></div>
-                    
+
                     <div class="d-flex flex-column gap-3 mt-4 mx-auto">
                         <button class="btn-ios-primary w-100 py-3" id="btnPrintCombined"><i class="bi bi-printer-fill"></i> <span data-i18n="btn_print_today">Print Today's QR Code</span></button>
                         <button class="btn-ios-outline w-100 py-3" id="btnPrintWeekly"><i class="bi bi-calendar-week-fill"></i> <span data-i18n="btn_print_weekly">Print 7-Day Batch</span></button>
                     </div>
-                    
+
                     <div class="backup-restore-container mt-4 pt-4 border-top">
                         <button class="btn-backup" id="btnBackup"><i class="bi bi-cloud-arrow-down-fill me-1"></i> <span data-i18n="btn_backup">Backup</span></button>
                         <button class="btn-restore" id="btnRestore"><i class="bi bi-cloud-arrow-up-fill me-1"></i> <span data-i18n="btn_restore">Restore</span></button>
@@ -524,6 +525,7 @@
     function sanitize(input) { return input.replace(/[^a-zA-Z0-9\s\-'\.&\/\(\)!?_+=:,]/g, '').substring(0, 40); }
     document.getElementById('storeName').addEventListener('input', function() { 
         this.value = sanitize(this.value); 
+        // Sync and strictly enforce the 20 character limit by cutting off excess
         document.getElementById('displayName').value = this.value.substring(0, 20); 
         updatePreview(); 
     });
@@ -561,14 +563,15 @@
         alert('Geolocation is not supported by this browser.');
     }
 });
-=function checkStorageReliability() {
+// Accurate Private / Restricted Storage Test
+function checkStorageReliability() {
     try {
         const testKey = '__vouchr_test__';
         localStorage.setItem(testKey, '1');
         localStorage.removeItem(testKey);
-        return true;
+        return true; // Storage is fully working
     } catch (e) {
-        return false;
+        return false; // Restricted or Private Mode
     }
 }
 
@@ -592,6 +595,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Business Type Pills & Preview Logic
 let activeIcon = 'bi-cup-hot-fill';
 let activeType = 'cafe';
 document.querySelectorAll('.biz-pill').forEach(pill => {
@@ -610,7 +614,7 @@ function updatePreview() {
     document.getElementById('previewPassName').textContent = rawName.substring(0, 20);
     const stampsDiv = document.getElementById('previewStamps'); 
     stampsDiv.innerHTML = '';
-    
+
     for (let row = 0; row < 2; row++) {
         const rowDiv = document.createElement('div'); 
         rowDiv.className = 'stamp-row';
@@ -636,7 +640,7 @@ const formContainer = document.getElementById('formContainer');
 function show(stepNum) { 
     [s1, s2, s3].forEach(el => el.classList.remove('active')); 
     document.getElementById('screen' + stepNum).classList.add('active'); 
-    
+
     if(stepNum === 3) {
         formContainer.style.display = 'none';
     } else {
@@ -653,7 +657,7 @@ function show(stepNum) {
     }
 
     window.scrollTo(0,0);
-    
+
     document.querySelectorAll('.step-dot').forEach(dot => {
         dot.classList.toggle('active', parseInt(dot.dataset.step) <= stepNum);
     });
@@ -684,12 +688,12 @@ async function createStore(skip) {
         alert('Please enter a Store Name first.');
         return false;
     }
-    
+
     keyPair = nacl.sign.keyPair();
     const hhs = document.getElementById('bonusStart').value;
     const hhe = document.getElementById('bonusEnd').value;
     const remindInput = document.getElementById('remindDays').value;
-    
+
         storeData = {
         sid: uuidv4(), 
         sn: skip ? sn : (document.getElementById('displayName').value || sn), 
@@ -733,7 +737,9 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
             document.querySelectorAll('.segmented-option').forEach(o => o.classList.remove('active'));
             this.classList.add('active'); 
             const mode = this.dataset.mode;
+            // Use translations instead of hardcoded English
             const key = 'sec_desc_' + mode + '_fixed';
+            // Get the translated text from i18n
             const translatedText = translations[key] || translations['sec_desc_' + mode];
             document.getElementById('securityDesc').textContent = translatedText;
             generateQR();
@@ -744,11 +750,12 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
         const container = document.getElementById('combinedQr'); 
         container.innerHTML = '';
         const mode = document.querySelector('.segmented-option.active').dataset.mode;
-        
+
         const payload = { 
             sid: storeData.sid, sn: storeData.sn, pk: storeData.pk, ct: storeData.ct, m: mode, tz: storeData.tz || 'UTC'
         };
 
+        // NEW: Ensure the location coordinates are injected into the QR payload!
         if (storeData.loc) {
             payload.loc = storeData.loc;
         }
@@ -760,16 +767,17 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
             const sk = nacl.util.decodeBase64(localStorage.getItem('storePrivateKey'));
             payload.sig = nacl.util.encodeBase64(nacl.sign.detached(nacl.util.decodeUTF8(storeData.sid + payload.d), sk));
         }
-        
+
         const payloadStr = JSON.stringify(payload);
         const encodedPayload = encodeURIComponent(payloadStr);
         const qrUrl = `https://vouchrdigital.pocketenginestudio.com/get.html?payload=${encodedPayload}`;
-        
+
         new QRCode(container, {
             text: qrUrl, width: 340, height: 340, colorDark: "#1D1D1F", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H
         });
     }
 
+    // Print Single
     document.getElementById('btnPrintCombined').addEventListener('click', () => {
         const c = document.querySelector('#combinedQr canvas');
         if (c) { 
@@ -789,7 +797,7 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
         const mode = document.querySelector('.segmented-option.active').dataset.mode;
         const w = window.open('','_blank'); 
         let html = `<div style="text-align:center;font-family:-apple-system, sans-serif;">`;
-        
+
         const hiddenDiv = document.createElement('div');
         const daysToPrint = mode === 'basic' ? 1 : 7; 
 
@@ -805,15 +813,15 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
                 const sk = nacl.util.decodeBase64(localStorage.getItem('storePrivateKey'));
                 payload.sig = nacl.util.encodeBase64(nacl.sign.detached(nacl.util.decodeUTF8(storeData.sid + payload.d), sk));
             }
-            
+
             hiddenDiv.innerHTML = '';
             new QRCode(hiddenDiv, {
                 text: `https://vouchrdigital.pocketenginestudio.com/get.html?payload=${encodeURIComponent(JSON.stringify(payload))}`,
                 width: 400, height: 400, colorDark: "#1D1D1F", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H
             });
-            
+
             let canvas = hiddenDiv.querySelector('canvas');
-            
+
             html += `
             <div style="page-break-after: always; padding: 40px;">
                 <h1 style="font-size:3.5rem; margin-bottom: 5px; font-weight: 800; letter-spacing: -1px;">${storeData.sn}</h1>
@@ -874,7 +882,7 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
     // Check Existing Data on Load
     if (localStorage.getItem('storeData')) { 
         storeData = JSON.parse(localStorage.getItem('storeData')); 
-        
+
         document.getElementById('storeName').value = storeData.sn;
         document.getElementById('displayName').value = storeData.ct.dn || storeData.sn;
         document.getElementById('location').value = storeData.loc || '';
@@ -886,7 +894,7 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
             document.getElementById('bonusEnd').value = storeData.ct.bh[1] || '';
         }
         document.getElementById('remindDays').value = storeData.ct.rad || '';
-        
+
         updatePreview();
         generateQR(); 
         show(3); 
@@ -894,25 +902,29 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
 </script>
 
 <script>
+    // Add to Home Screen Detection & Prompt
     (function() {
         const isStandalone = window.navigator.standalone || 
                              window.matchMedia('(display-mode: standalone)').matches;
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-        
+
+        // Check if user has dismissed the banner before
         const bannerDismissed = localStorage.getItem('vouchr-install-dismissed') === 'true';
-        
+
+        // Only show if NOT standalone, IN Safari (iOS), and NOT dismissed
         if (!isStandalone && isSafari && !bannerDismissed) {
             setTimeout(() => {
                 document.getElementById('installBanner').classList.add('visible');
             }, 1500);
         }
 
-        
+        // Dismiss handler
         window.dismissInstallBanner = function() {
             document.getElementById('installBanner').classList.remove('visible');
             localStorage.setItem('vouchr-install-dismissed', 'true');
         };
 
+        // Install button – shows instructions
         document.getElementById('installAppBtn').addEventListener('click', function() {
             alert(
                 '📱 How to install Vouchr on your Home Screen:\n\n' +
