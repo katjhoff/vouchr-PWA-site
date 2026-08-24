@@ -449,7 +449,6 @@
                         <span class="segmented-option active" data-mode="simple" data-i18n="sec_mode_simple">Simple</span>
                         <span class="segmented-option" data-mode="secure" data-i18n="sec_mode_secure">Secure</span>
                     </div>
-                    <p id="securityDesc" class="security-desc mb-3" data-i18n="sec_desc_simple">Medium security – date-bound QR prevents reuse on a different day. Requires print refresh daily.</p>
                     <p id="securityDesc" class="security-desc mb-3" data-i18n="sec_desc_simple">Medium security – Customers can only stamp once per day. QR codes expire daily and require customers to be physically near your store to stamp. Prevents old QR reuse and screenshot sharing. Requires refreshing the QR code daily (refresh the page or print fresh). Recommended for most stores.</p>
 
                     <div id="combinedQr"></div>
@@ -565,13 +564,16 @@
 });
 // Accurate Private / Restricted Storage Test
 function checkStorageReliability() {
+=function checkStorageReliability() {
     try {
         const testKey = '__vouchr_test__';
         localStorage.setItem(testKey, '1');
         localStorage.removeItem(testKey);
         return true; // Storage is fully working
+        return true;
     } catch (e) {
         return false; // Restricted or Private Mode
+        return false;
     }
 }
 
@@ -919,6 +921,7 @@ document.getElementById('btnCreateShop').addEventListener('click', async () => {
         }
 
         // Dismiss handler
+        
         window.dismissInstallBanner = function() {
             document.getElementById('installBanner').classList.remove('visible');
             localStorage.setItem('vouchr-install-dismissed', 'true');
