@@ -44,6 +44,11 @@
   "pricing_item3": "Règles Automatiques d'Heure Heureuse",
   "pricing_item4": "Présentoirs Imprimables Instantanément",
   "pricing_btn": "Créer le QR de la boutique",
+  "btn_start_new_store": "Démarrer une nouvelle boutique",
+  "msg_reset_confirm": "Êtes-vous sûr ? Cela effacera votre progression actuelle.",
+  "warn_gps_invalid": "Format GPS invalide. Veuillez utiliser 'Latitude, Longitude'.",
+  "warn_happy_hour_partial": "Veuillez définir l'heure de début et de fin.",
+  "badge_saved_locally": "Sauvegardé localement"
 
   "footer_brand": "Vouchr : Créateur de Boutique",
   "footer_privacy": "Politique de Confidentialité",
