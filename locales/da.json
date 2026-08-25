@@ -48,7 +48,7 @@
   "msg_reset_confirm": "Er du sikker? Dette vil rydde dine nuværende fremskridt.",
   "warn_gps_invalid": "Ugyldigt GPS-format. Brug venligst 'Breddegrad, Længdegrad'.",
   "warn_happy_hour_partial": "Indstil venligst både start- og sluttidspunkt.",
-  "badge_saved_locally": "Gemt lokalt"
+  "badge_saved_locally": "Gemt lokalt",
 
   "footer_brand": "Vouchr Butiksbygger",
   "footer_privacy": "Privatlivspolitik",
