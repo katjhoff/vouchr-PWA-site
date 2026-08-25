@@ -44,6 +44,11 @@
   "pricing_item3": "Reglas Automáticas de Hora Feliz",
   "pricing_item4": "Expositores Imprimibles al Instante",
   "pricing_btn": "Crear QR de Tienda",
+  "btn_start_new_store": "Iniciar Nueva Tienda",
+  "msg_reset_confirm": "¿Estás seguro? Esto borrará tu progreso actual.",
+  "warn_gps_invalid": "Formato GPS no válido. Por favor, usa 'Latitud, Longitud'.",
+  "warn_happy_hour_partial": "Por favor, establece la hora de inicio y de finalización.",
+  "badge_saved_locally": "Guardado localmente"
 
   "footer_brand": "Vouchr Creador de Tiendas",
   "footer_privacy": "Política de Privacidad",
