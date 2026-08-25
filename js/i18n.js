@@ -73,6 +73,13 @@
 
     // 4. Update the language switcher dropdown/buttons
     function updateSwitcherUI(locale) {
+        // Update the main dropdown button text to the currently active language
+        const langBtn = document.getElementById('currentLangBtn');
+        if (langBtn && translations['lang_' + locale]) {
+            langBtn.textContent = translations['lang_' + locale];
+        }
+
+        // Keep the existing logic
         document.querySelectorAll('.lang-switcher-select').forEach(select => {
             select.value = locale;
         });
