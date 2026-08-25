@@ -19,6 +19,11 @@
   "hero_subtitle": "A completely free, offline‑first loyalty engine that lives in your customers' Apple Wallet. No fees, no accounts, no monthly bills, and no internet required after initial setup.",
   "btn_start_building": "Start Building Free",
   "btn_how_it_works": "How it works",
+  "btn_start_new_store": "Start New Store",
+  "msg_reset_confirm": "Are you sure? This will clear your current progress.",
+  "warn_gps_invalid": "Invalid GPS format. Please use 'Latitude, Longitude'.",
+  "warn_happy_hour_partial": "Please set both start and end times.",
+  "badge_saved_locally": "Saved locally"
 
   "feature_sec_title": "Built to Keep Customers Coming Back",
   "feature_sec_sub": "No hardware, no monthly fees. Set your own rewards, automate gentle reminders, and turn every visit into a lasting relationship.",
