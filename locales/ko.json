@@ -44,6 +44,11 @@
   "pricing_item3": "자동 해피아워 규칙",
   "pricing_item4": "즉시 인쇄 가능한 스탠드",
   "pricing_btn": "매장 QR 생성",
+  "btn_start_new_store": "새 매장 시작",
+  "msg_reset_confirm": "확실합니까? 현재 진행 상황이 지워집니다.",
+  "warn_gps_invalid": "잘못된 GPS 형식입니다. '위도, 경도'를 사용하십시오.",
+  "warn_happy_hour_partial": "시작 및 종료 시간을 모두 설정하십시오.",
+  "badge_saved_locally": "로컬에 저장됨",
 
   "footer_brand": "Vouchr 스토어 빌더",
   "footer_privacy": "개인정보 처리방침",
