@@ -23,7 +23,7 @@
   "msg_reset_confirm": "Are you sure? This will clear your current progress.",
   "warn_gps_invalid": "Invalid GPS format. Please use 'Latitude, Longitude'.",
   "warn_happy_hour_partial": "Please set both start and end times.",
-  "badge_saved_locally": "Saved locally"
+  "badge_saved_locally": "Saved locally",
 
   "feature_sec_title": "Built to Keep Customers Coming Back",
   "feature_sec_sub": "No hardware, no monthly fees. Set your own rewards, automate gentle reminders, and turn every visit into a lasting relationship.",
