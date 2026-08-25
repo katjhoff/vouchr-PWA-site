@@ -44,6 +44,11 @@
   "pricing_item3": "Regras Automáticas de Happy Hour",
   "pricing_item4": "Expositores Imprimíveis Instantâneos",
   "pricing_btn": "Criar QR da Loja",
+  "btn_start_new_store": "Iniciar Nova Loja",
+  "msg_reset_confirm": "Tem certeza? Isso apagará seu progresso atual.",
+  "warn_gps_invalid": "Formato GPS inválido. Por favor, use 'Latitude, Longitude'.",
+  "warn_happy_hour_partial": "Por favor, defina o horário de início e término.",
+  "badge_saved_locally": "Salvo localmente",
 
   "footer_brand": "Vouchr Construtor de Lojas",
   "footer_privacy": "Política de Privacidade",
