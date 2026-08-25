@@ -48,7 +48,7 @@
   "msg_reset_confirm": "¿Estás seguro? Esto borrará tu progreso actual.",
   "warn_gps_invalid": "Formato GPS no válido. Por favor, usa 'Latitud, Longitud'.",
   "warn_happy_hour_partial": "Por favor, establece la hora de inicio y de finalización.",
-  "badge_saved_locally": "Guardado localmente"
+  "badge_saved_locally": "Guardado localmente",
 
   "footer_brand": "Vouchr Creador de Tiendas",
   "footer_privacy": "Política de Privacidad",
