@@ -48,7 +48,7 @@
   "msg_reset_confirm": "Sind Sie sicher? Dadurch wird Ihr aktueller Fortschritt gelöscht.",
   "warn_gps_invalid": "Ungültiges GPS-Format. Bitte verwenden Sie 'Breitengrad, Längengrad'.",
   "warn_happy_hour_partial": "Bitte legen Sie sowohl die Start- als auch die Endzeit fest.",
-  "badge_saved_locally": "Lokal gespeichert"
+  "badge_saved_locally": "Lokal gespeichert",
 
   "footer_brand": "Vouchr Store Builder",
   "footer_privacy": "Datenschutz",
