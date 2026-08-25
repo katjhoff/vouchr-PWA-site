@@ -38,7 +38,7 @@
   "msg_reset_confirm": "本当によろしいですか？現在の進行状況が消去されます。",
   "warn_gps_invalid": "無効なGPSフォーマットです。「緯度、経度」を使用してください。",
   "warn_happy_hour_partial": "開始時間と終了時間の両方を設定してください。",
-  "badge_saved_locally": "ローカルに保存済み"
+  "badge_saved_locally": "ローカルに保存済み",
 
   "pricing_title": "ゼロコスト。サブスクリプションなし。",
   "pricing_sub": "ロイヤルティツールは中小企業を支援し、負担にするべきではないと信じています。",
