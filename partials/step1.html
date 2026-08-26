@@ -1,0 +1,64 @@
+<div class="app-container" id="formContainer">
+    <div class="text-center">
+        <h2 class="display-6 fw-bold mb-2 text-dark" style="letter-spacing: -1px;" data-i18n="builder_setup_title">Setup Your Pass</h2>
+        <p class="tagline" data-i18n="builder_tagline">3 easy steps to digital loyalty.</p>
+
+        <div class="steps-indicator" id="stepDotsContainer">
+            <div class="step-dot active" data-step="1">1</div>
+            <div class="step-line" id="line1"></div>
+            <div class="step-dot" data-step="2">2</div>
+            <div class="step-line" id="line2"></div>
+            <div class="step-dot" data-step="3"><i class="bi bi-qr-code"></i></div>
+        </div>
+
+        <div class="biz-type-container mt-4" id="bizPills">
+            <div class="biz-pill active" data-type="cafe" data-icon="bi-cup-hot-fill" data-reward="Free Coffee after 8 stamps"><i class="bi bi-cup-hot-fill fs-5"></i> <span data-i18n="biz_pill_cafe">Cafe</span></div>
+            <div class="biz-pill" data-type="bar" data-icon="bi-cup-straw" data-reward="Free Drink after 8 stamps"><i class="bi bi-cup-straw fs-5"></i> <span data-i18n="biz_pill_bar">Bar</span></div>
+            <div class="biz-pill" data-type="restaurant" data-icon="bi-shop" data-reward="20% Off after 6 stamps"><i class="bi bi-shop fs-5"></i> <span data-i18n="biz_pill_restaurant">Restaurant</span></div>
+            <div class="biz-pill" data-type="other" data-icon="bi-check-circle-fill" data-reward="10% Off after 8 stamps"><i class="bi bi-check-circle-fill fs-5"></i> <span data-i18n="biz_pill_other">Other Service</span></div>
+        </div>
+    </div>
+
+    <!-- STEP 1 -->
+    <div id="screen1" class="wizard-screen active">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="ios-card">
+                    <h5 class="fw-bold mb-4 fs-4" data-i18n="step1_title">Store Details</h5>
+                    <div class="mb-0">
+                        <label class="form-label" data-i18n="label_store_name">Store name *</label>
+                        <input type="text" id="storeName" class="form-control" data-i18n-placeholder="placeholder_store_name" placeholder="e.g., Moe's Coffee" maxlength="30" required>
+                    </div>
+                </div>
+
+                <div class="ios-card">
+                    <h5 class="fw-bold mb-4 fs-4 d-flex align-items-center" data-i18n="label_location_hours">Location & Hours <span class="badge bg-light text-secondary ms-3 fs-6 fw-normal border" data-i18n="label_optional">Optional</span></h5>
+                    <div class="mb-4">
+                        <label class="form-label" data-i18n="label_opening_time">Opening time</label>
+                        <div class="input-group">
+                            <input type="time" id="openingTime" class="form-control" value="09:00">
+                            <button class="btn btn-clear" type="button" onclick="document.getElementById('openingTime').value=''"><i class="bi bi-x-circle-fill"></i></button>
+                        </div>
+                        <div class="input-hint" data-i18n="hint_opening_time">Alerts customers when you open for the day. Clear if unwanted.</div>
+                    </div>
+
+                    <div class="mb-0">
+                        <label class="form-label" data-i18n="label_gps_location">GPS Location</label>
+                        <div class="input-group">
+                            <input type="text" id="location" class="form-control" data-i18n-placeholder="placeholder_gps_location" placeholder="Latitude, Longitude">
+                            <button class="btn btn-clear" type="button" onclick="document.getElementById('location').value=''"><i class="bi bi-x-circle-fill"></i></button>
+                            <button class="btn btn-loc" type="button" id="btnGetLoc"><i class="bi bi-geo-alt-fill"></i> Locate</button>
+                        </div>
+                        <div class="input-hint" data-i18n="hint_gps_location">Enables geofencing: customers earn stamps only when physically near your store, and receive lockscreen alerts when passing by.</div>
+                        <div id="locationWarning" class="text-danger" style="font-size:0.85rem; margin-top:6px; display:none;">⚠️ Please enter a valid format: Latitude, Longitude (e.g., 37.7749,-122.4194)</div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row gap-3 mt-5">
+                    <button class="btn-ios-outline flex-fill py-3" id="btnSkip" data-i18n="btn_skip">Use Defaults</button>
+                    <button class="btn-ios-primary flex-fill py-3" id="btnCustomize" data-i18n="btn_customize">Customize Store Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

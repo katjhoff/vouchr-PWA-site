@@ -1,0 +1,31 @@
+<!-- REVIEW STEP -->
+<div id="screenReview" class="wizard-screen">
+    <div class="app-container">
+        <div class="ios-card" style="max-width: 600px; margin: 0 auto;">
+            <h4 class="fw-bold mb-3 text-center" data-i18n="review_title">Review Your Store</h4>
+            <div class="review-grid">
+                <div><span class="label" data-i18n="review_store_name">Store Name</span></div>
+                <div class="value" id="reviewStoreName">-</div>
+
+                <div><span class="label" data-i18n="review_display_name">Card Display</span></div>
+                <div class="value" id="reviewDisplayName">-</div>
+
+                <div><span class="label" data-i18n="review_reward">Reward</span></div>
+                <div class="value" id="reviewReward">-</div>
+
+                <div><span class="label" data-i18n="review_security">Security Mode</span></div>
+                <div class="value" id="reviewSecurity">-</div>
+
+                <div><span class="label" data-i18n="review_expiry">Expiry</span></div>
+                <div class="value" id="reviewExpiry">None set</div>
+
+                <div><span class="label" data-i18n="review_location">Location</span></div>
+                <div class="value" id="reviewLocation">None set</div>
+            </div>
+            <div class="d-flex flex-column flex-md-row gap-3 mt-4">
+                <button class="btn-ios-outline flex-fill" onclick="show(2)" data-i18n="btn_back_to_edit">← Back to Edit</button>
+                <button class="btn-ios-primary flex-fill" id="btnConfirmReview" data-i18n="btn_confirm_generate">Confirm & Generate QR</button>
+            </div>
+        </div>
+    </div>
+</div>

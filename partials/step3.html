@@ -1,0 +1,91 @@
+<!-- STEP 3: DASHBOARD & TIPS -->
+<div id="screen3" class="wizard-screen">
+    <div class="dashboard-viewport px-3 pt-4">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="qr-stage">
+                <h3 class="fw-bold mb-4 d-flex align-items-center justify-content-center gap-3" data-i18n="step3_title">
+                    Your QR Code
+                    <span id="saveStatus" class="badge bg-light text-dark border" style="font-size:0.7rem; display:none; padding:4px 10px; font-weight:500; border-color:#D1D1D6 !important;">Saved locally</span>
+                </h3>
+
+                <div class="segmented-control mx-auto mb-3">
+                    <span class="segmented-option" data-mode="basic" data-i18n="sec_mode_basic">Static QR</span>
+                    <span class="segmented-option active" data-mode="simple" data-i18n="sec_mode_simple">Daily Rotating</span>
+                    <span class="segmented-option" data-mode="secure" data-i18n="sec_mode_secure">Location-Verified</span>
+                </div>
+                <p id="securityDesc" class="security-desc mb-3">Medium security – Customers can only stamp once per day. QR codes expire daily and require customers to be physically near your store to stamp. Prevents old QR reuse and screenshot sharing. Requires refreshing the QR code daily (refresh the page or print fresh). Recommended for most stores.</p>
+
+                <div id="combinedQr"></div>
+
+                <div class="d-flex flex-column gap-3 mt-4 mx-auto">
+                    <button class="btn-ios-primary w-100 py-3" id="btnPrintCombined"><i class="bi bi-printer-fill"></i> <span data-i18n="btn_print_today">Print Today's QR Code</span></button>
+                    <button class="btn-ios-outline w-100 py-3" id="btnPrintWeekly"><i class="bi bi-calendar-week-fill"></i> <span data-i18n="btn_print_weekly">Print 7-Day Batch</span></button>
+                </div>
+
+                <div class="backup-restore-container mt-4 pt-4 border-top">
+                    <button class="btn-backup" id="btnBackup"><i class="bi bi-cloud-arrow-down-fill me-1"></i> <span data-i18n="btn_backup">Backup</span></button>
+                    <button class="btn-restore" id="btnRestore"><i class="bi bi-cloud-arrow-up-fill me-1"></i> <span data-i18n="btn_restore">Restore</span></button>
+                    <button class="btn-restore" id="btnResetStore" style="border-color: #FF3B30; color: #FF3B30;"><i class="bi bi-arrow-counterclockwise me-1"></i> <span data-i18n="btn_start_new_store">Start New Store</span></button>
+                    <input type="file" id="restoreInput" accept=".json" />
+                </div>
+                <div id="backupStatus" class="backup-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <div class="marquee-item" data-i18n="marquee_example_1">(New York)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_2">(Berlin)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_3">(Austin)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_4">(Paris)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_5">(Munich)</div>
+            <div class="marquee-item">•</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-item" data-i18n="marquee_example_1">(New York)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_2">(Berlin)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_3">(Austin)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_4">(Paris)</div>
+            <div class="marquee-item">•</div>
+            <div class="marquee-item" data-i18n="marquee_example_5">(Munich)</div>
+            <div class="marquee-item">•</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container px-4 text-center">
+            <div class="brand-logo justify-content-center mb-4">
+                <img src="images/VOUCHRLOGO.png" alt="Vouchr" height="35" style="margin-right: 2px;">
+                <span data-i18n="footer_brand">Vouchr Store Builder</span>
+            </div>        
+            <div class="footer-links mb-4">
+                <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+                <a href="terms.html" data-i18n="footer_terms">Terms of Service</a>
+                <a href="mailto:develop@pocketenginestudio.com" data-i18n="footer_contact">Contact Us</a>
+            </div>
+            <p class="text-muted small mb-0" data-i18n="footer_copyright">&copy; 2026 PocketEngine Studio LLC. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- INSTALL BANNER (still needs to be inside #app, so we put it here) -->
+<div id="installBanner">
+    <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-app-indicator fs-2" style="color: var(--ios-blue);"></i>
+        <div class="install-text">
+            <h6>Install Vouchr</h6>
+            <p>Add to Home Screen</p>
+        </div>
+    </div>
+    <div class="d-flex align-items-center gap-1">
+        <button id="installAppBtn">Install</button>
+        <button class="btn-close-banner" onclick="dismissInstallBanner()"><i class="bi bi-x-circle-fill"></i></button>
+    </div>
+</div>

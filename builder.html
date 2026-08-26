@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
+        /* ─── All your existing CSS goes here (copy from your current <style> block) ─── */
         :root {
             --ios-blue: #007AFF;
             --ios-blue-dark: #0056B3;
@@ -18,94 +19,38 @@
             --ios-black: #1D1D1F;
             --glass-bg: rgba(255, 255, 255, 0.72);
         }
-        .navbar-custom .container-fluid {
-            max-width: 100%;
-        }
-        .navbar-custom .navbar-toggler {
-            padding: 0.25rem 0.5rem;
-            color: var(--ios-text);
-        }
-        .navbar-custom .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(29, 29, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-        .navbar-custom .navbar-collapse {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 1rem;
-            border-radius: 16px;
-            margin-top: 0.5rem;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-        .navbar-custom .nav-link-custom {
-            padding: 0.5rem 0;
-            display: inline-block;
-        }
-        @media (min-width: 768px) {
-            .navbar-custom .navbar-collapse {
-                background: transparent;
-                backdrop-filter: none;
-                padding: 0;
-                border: none;
-                margin-top: 0;
-            }
-            .navbar-custom .nav-link-custom {
-                padding: 0;
-            }
-            .navbar-custom .d-md-none {
-                display: none !important;
-            }
-        }
-
+        .navbar-custom .container-fluid { max-width: 100%; }
+        .navbar-custom .navbar-toggler { padding: 0.25rem 0.5rem; color: var(--ios-text); }
+        .navbar-custom .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(29, 29, 31, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+        .navbar-custom .navbar-collapse { background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 1rem; border-radius: 16px; margin-top: 0.5rem; border: 1px solid rgba(0,0,0,0.05); }
+        .navbar-custom .nav-link-custom { padding: 0.5rem 0; display: inline-block; }
+        @media (min-width: 768px) { .navbar-custom .navbar-collapse { background: transparent; backdrop-filter: none; padding: 0; border: none; margin-top: 0; } .navbar-custom .nav-link-custom { padding: 0; } .navbar-custom .d-md-none { display: none !important; } }
         html { scroll-behavior: smooth; }
         body { background-color: var(--ios-bg); color: var(--ios-text); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-
-        /* Navbar */
-        .navbar-custom { background: rgba(242, 242, 247, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; border-bottom: 1px solid rgba(60,60,67,0.1); }
+        .navbar-custom { background: rgba(242,242,247,0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; border-bottom: 1px solid rgba(60,60,67,0.1); }
         .brand-logo { font-size: 1.1rem; font-weight: 600; color: var(--ios-blue); text-decoration: none; }
-
-        /* App Layout */
         .app-container { max-width: 900px; margin: 3rem auto; padding: 0 20px; }
-
-        /* Step Indicator */
         .steps-indicator { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 2.5rem; }
         .step-dot { width: 32px; height: 32px; border-radius: 50%; background: #E5E5EA; color: var(--ios-subtext); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; transition: all 0.3s; }
         .step-dot.active { background: var(--ios-black); color: white; transform: scale(1.1); }
         .step-line { height: 2px; width: 40px; background: #E5E5EA; transition: all 0.3s; }
         .step-line.active { background: var(--ios-black); }
         .tagline { text-align: center; color: var(--ios-subtext); font-weight: 500; font-size: 1.1rem; margin-bottom: 1.5rem; }
-
-        /* Pills */
         .biz-type-container { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 2.5rem; }
-        .biz-pill {
-            background: var(--ios-card-bg); border: none; padding: 12px 24px;
-            border-radius: 30px; font-weight: 600; font-size: 1rem; color: var(--ios-text);
-            cursor: pointer; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); display: flex; align-items: center; gap: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        }
+        .biz-pill { background: var(--ios-card-bg); border: none; padding: 12px 24px; border-radius: 30px; font-weight: 600; font-size: 1rem; color: var(--ios-text); cursor: pointer; transition: all 0.2s cubic-bezier(0.16,1,0.3,1); display: flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
         .biz-pill:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
         .biz-pill.active { background: var(--ios-black); color: #FFFFFF; transform: scale(1.05); }
-
-        /* Modern iOS Forms */
         .ios-card { background: var(--ios-card-bg); border-radius: 20px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 24px; border: 1px solid rgba(0,0,0,0.04); }
         .form-label { font-weight: 600; color: var(--ios-text); font-size: 0.95rem; margin-bottom: 8px; }
         .form-control { border-radius: 14px; border: none; padding: 14px 16px; font-size: 1.05rem; background: #F2F2F7; font-weight: 500; color: var(--ios-text); transition: all 0.2s; }
         .form-control::placeholder { color: #A1A1A6; font-weight: 400; }
         .form-control:focus { background: #FFFFFF; outline: none; box-shadow: 0 0 0 4px rgba(0,122,255,0.15); }
         .input-hint { font-size: 0.85rem; color: var(--ios-subtext); margin-top: 8px; line-height: 1.4; }
-
-        /* Input Clear Buttons */
         .btn-clear { background: #F2F2F7; border: none; color: var(--ios-subtext); border-radius: 0 14px 14px 0; font-size: 1.1rem; padding: 0 16px; }
         .btn-clear:hover { color: #FF3B30; }
         .btn-loc { background: #E5E5EA; border: none; color: var(--ios-black); border-radius: 0 14px 14px 0; padding: 0 16px; font-weight: bold; transition: 0.2s; }
         .btn-loc:hover { background: #D1D1D6; }
-
-        /* Live Preview Wallet Pass */
-        .wallet-pass-preview {
-            background: #000000; border-radius: 28px; overflow: hidden; width: 100%; max-width: 320px;
-            margin: 0 auto; color: white; box-shadow: 0 20px 40px rgba(0,0,0,0.25); position: sticky; top: 100px;
-            transition: all 0.3s;
-        }
+        .wallet-pass-preview { background: #000000; border-radius: 28px; overflow: hidden; width: 100%; max-width: 320px; margin: 0 auto; color: white; box-shadow: 0 20px 40px rgba(0,0,0,0.25); position: sticky; top: 100px; transition: all 0.3s; }
         .pass-header { padding: 24px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .pass-name-pill { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.5px; }
         .pass-body { padding: 30px 20px 40px; text-align: center; }
@@ -115,810 +60,112 @@
         .stamp-filled { background: var(--ios-blue); color: white; box-shadow: 0 4px 10px rgba(0,122,255,0.3); }
         .stamp-empty { background: #2C2C2E; color: #636366; }
         .reward-text { font-weight: 600; font-size: 1rem; margin-top: 2rem; color: #E5E5EA; }
-
-        /* Big Buttons */
-        .btn-ios-primary { background: var(--ios-blue); color: white; font-weight: 700; font-size: 1.1rem; padding: 16px 24px; border-radius: 16px; border: none; width: 100%; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px;}
+        .btn-ios-primary { background: var(--ios-blue); color: white; font-weight: 700; font-size: 1.1rem; padding: 16px 24px; border-radius: 16px; border: none; width: 100%; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
         .btn-ios-primary:hover { transform: scale(0.98); background: #006ee6; }
-        #btnPrintCombined {
-            white-space: normal;
-            word-break: break-word;
-            text-align: center;
-            padding: 16px 12px;
-            font-size: 1rem;
-            gap: 6px;
-        }
-
-        @media (max-width: 576px) {
-            #btnPrintCombined {
-                font-size: 0.9rem;
-                padding: 14px 10px;
-            }
-        }
-        .btn-ios-outline { background: var(--ios-card-bg); color: var(--ios-text); box-shadow: 0 2px 10px rgba(0,0,0,0.05); font-weight: 700; font-size: 1.1rem; padding: 16px 24px; border-radius: 16px; border: none; width: 100%; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px;}
-        #btnPrintWeekly {
-            white-space: normal;
-            word-break: break-word;
-            text-align: center;
-            padding: 16px 12px;
-            font-size: 1rem;
-            gap: 6px;
-        }
-
-        @media (max-width: 576px) {
-            #btnPrintWeekly {
-                font-size: 0.9rem;
-                padding: 14px 10px;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
+        #btnPrintCombined { white-space: normal; word-break: break-word; text-align: center; padding: 16px 12px; font-size: 1rem; gap: 6px; }
+        @media (max-width: 576px) { #btnPrintCombined { font-size: 0.9rem; padding: 14px 10px; } }
+        .btn-ios-outline { background: var(--ios-card-bg); color: var(--ios-text); box-shadow: 0 2px 10px rgba(0,0,0,0.05); font-weight: 700; font-size: 1.1rem; padding: 16px 24px; border-radius: 16px; border: none; width: 100%; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        #btnPrintWeekly { white-space: normal; word-break: break-word; text-align: center; padding: 16px 12px; font-size: 1rem; gap: 6px; }
+        @media (max-width: 576px) { #btnPrintWeekly { font-size: 0.9rem; padding: 14px 10px; } .section-title { font-size: 1.8rem; } }
         .btn-ios-outline:hover { transform: scale(0.98); background: #FAFAFA; }
-
         .back-btn { color: var(--ios-subtext); cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; margin-bottom: 2rem; transition: color 0.2s; font-size: 1rem; padding: 6px 10px; }
         .back-btn:hover { color: var(--ios-text); }
-
-        #dynamicHeaderLeft {
-            flex: 0 0 auto;
-            min-width: 100px;
-        }
-
-        /* Screens */
+        #dynamicHeaderLeft { flex: 0 0 auto; min-width: 100px; }
         .wizard-screen { display: none; }
-        .wizard-screen.active { display: block; animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .wizard-screen.active { display: block; animation: slideUp 0.5s cubic-bezier(0.16,1,0.3,1); }
         @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-        /* Segmented Control */
         .segmented-control { display: flex; background: #E5E5EA; border-radius: 10px; padding: 4px; margin-bottom: 0.5rem; }
         .segmented-option { flex: 1; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 0.9rem; text-align: center; color: var(--ios-subtext); transition: all 0.2s; }
         .segmented-option.active { background: #FFFFFF; color: var(--ios-text); box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
         .security-desc { font-size: 0.9rem; color: var(--ios-subtext); min-height: 40px; text-align: center; font-weight: 500; }
-
-        /* ------------------------------------- */
-        /* STEP 3 FULLSCREEN DASHBOARD & TIPS   */
-        /* ------------------------------------- */
-
-        .dashboard-viewport {
-            min-height: calc(100vh - 80px);
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            position: relative; padding-bottom: 4rem;
-        }
-
+        .dashboard-viewport { min-height: calc(100vh - 80px); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; padding-bottom: 4rem; }
         .qr-stage { background: #FFFFFF; border-radius: 28px; padding: 2.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.04); text-align: center; width: 100%; max-width: 500px; margin: 0 auto; }
         #combinedQr { display: flex; justify-content: center; padding: 15px; margin: 1.5rem 0; }
         #combinedQr canvas { max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
-
-        /* Backup/Restore Buttons */
         .backup-restore-container { display: flex; gap: 12px; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
         .btn-backup, .btn-restore { background: transparent; border: 1px solid #C6C6C8; color: var(--ios-subtext); padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
         .btn-backup:hover, .btn-restore:hover { background: #E5E5EA; color: var(--ios-text); }
         #restoreInput { display: none; }
         .backup-status { font-size: 0.85rem; font-weight: 500; margin-top: 8px; text-align: center; }
-
-        /* Footer Marquee */
         .marquee-wrapper { width: 100%; overflow: hidden; background: #FFFFFF; padding: 2rem 0 3rem 0; white-space: nowrap; border-top: 1px solid #E5E5EA; }
         .marquee-track { display: inline-flex; gap: 4rem; animation: marquee 30s linear infinite; }
         .marquee-item { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--ios-subtext); font-size: 1.05rem; }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .marquee-wrapper + footer {
-            border-top: 1px solid var(--ios-border);
-            padding-top: 2rem;
-        }
-
-        /* Install Banner */
-        #installBanner {
-            position: fixed;
-            bottom: -150px; 
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            max-width: 400px;
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 16px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: bottom 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-            z-index: 9999;
-            border: 1px solid rgba(255,255,255,0.5);
-        }
+        .marquee-wrapper + footer { border-top: 1px solid var(--ios-border); padding-top: 2rem; }
+        #installBanner { position: fixed; bottom: -150px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 400px; background: var(--glass-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 16px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: space-between; transition: bottom 0.5s cubic-bezier(0.16,1,0.3,1); z-index: 9999; border: 1px solid rgba(255,255,255,0.5); }
         #installBanner.visible { bottom: 30px; }
         .install-text h6 { margin: 0; font-weight: 700; font-size: 1rem; color: var(--ios-text); }
         .install-text p { margin: 0; font-size: 0.8rem; color: var(--ios-subtext); }
-        #installAppBtn {
-            background: var(--ios-blue); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;
-        }
+        #installAppBtn { background: var(--ios-blue); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: 600; font-size: 0.9rem; }
         .btn-close-banner { background: none; border: none; color: var(--ios-subtext); font-size: 1.2rem; padding: 0 8px; }
-
-        /* Footer */
         footer { background: #FFFFFF; border-top: 1px solid var(--ios-border); padding: 4rem 0 2rem; }
         .footer-links a { color: var(--ios-subtext); text-decoration: none; font-size: 0.9rem; margin: 0 12px; transition: color 0.2s; }
         .footer-links a:hover { color: var(--ios-black); }
+
+        /* ─── NEW: Review step polish ─── */
+        .review-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+        .review-grid .label { font-weight: 600; color: var(--ios-subtext); font-size: 0.9rem; }
+        .review-grid .value { font-weight: 500; color: var(--ios-text); word-break: break-word; }
+        @media (max-width: 480px) {
+            .review-grid { grid-template-columns: 1fr; gap: 6px; }
+        }
     </style>
 </head>
 <body>
-
-<nav class="navbar-custom navbar navbar-expand-md">
-    <div class="container-fluid px-4">
-        <!-- Left Side: Dynamic Back Button Container (always visible) -->
-        <div id="dynamicHeaderLeft" class="d-flex align-items-center"></div>
-
-        <!-- Right Side: Brand + Toggler -->
-        <div class="d-flex align-items-center gap-2">
-            <a href="index.html" class="brand-logo d-md-none" data-i18n="nav_home">HOME</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#builderNavMenu" aria-controls="builderNavMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <!-- Collapsible menu -->
-        <div class="collapse navbar-collapse" id="builderNavMenu">
-            <ul class="navbar-nav ms-auto align-items-center gap-2 gap-md-3">
-                <li class="nav-item"><a href="index.html" class="brand-logo nav-link-custom" data-i18n="nav_home">HOME</a></li>
-                <li class="nav-item">
-                    <div class="dropdown d-inline-block">
-                                <button id="currentLangBtn" class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:20px; font-weight:600;">English</button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')" data-i18n="lang_en">English</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')" data-i18n="lang_es">Spanish</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('fr')" data-i18n="lang_fr">French</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')" data-i18n="lang_de">German</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ja')" data-i18n="lang_ja">日本語</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ko')" data-i18n="lang_ko">한국어</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('pt')" data-i18n="lang_pt">Português</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('da')" data-i18n="lang_da">Dansk</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('sv')" data-i18n="lang_sv">Svenska</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+    <div id="app">
+        <!-- Partials will be injected here -->
+        <div class="text-center py-5" style="color: var(--ios-subtext);">
+            <div class="spinner-border text-primary" role="status"></div>
+            <p class="mt-3">Loading Vouchr Builder…</p>
         </div>
     </div>
-</nav>
 
-<main class="flex-grow-1">
-    <!-- STEPS 1 & 2 CONTAINER -->
-    <div class="app-container" id="formContainer">
-        <div class="text-center">
-            <h2 class="display-6 fw-bold mb-2 text-dark" style="letter-spacing: -1px;" data-i18n="builder_setup_title">Setup Your Pass</h2>
-            <p class="tagline" data-i18n="builder_tagline">3 easy steps to digital loyalty.</p>
+    <!-- ─── Dependencies ─── -->
+    <script src="js/nacl-fast.min.js"></script>
+    <script src="js/nacl-util.min.js"></script>
+    <script src="js/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
 
-            <div class="steps-indicator" id="stepDotsContainer">
-                <div class="step-dot active" data-step="1">1</div>
-                <div class="step-line" id="line1"></div>
-                <div class="step-dot" data-step="2">2</div>
-                <div class="step-line" id="line2"></div>
-                <div class="step-dot" data-step="3"><i class="bi bi-qr-code"></i></div>
-            </div>
+    <!-- ─── Main App Logic ─── -->
+    <script src="js/app.js"></script>
 
-            <div class="biz-type-container mt-4" id="bizPills">
-                <div class="biz-pill active" data-type="cafe" data-icon="bi-cup-hot-fill" data-reward="Free Coffee after 8 stamps"><i class="bi bi-cup-hot-fill fs-5"></i> <span data-i18n="biz_pill_cafe">Cafe</span></div>
-                <div class="biz-pill" data-type="bar" data-icon="bi-cup-straw" data-reward="Free Drink after 8 stamps"><i class="bi bi-cup-straw fs-5"></i> <span data-i18n="biz_pill_bar">Bar</span></div>
-                <div class="biz-pill" data-type="restaurant" data-icon="bi-shop" data-reward="20% Off after 6 stamps"><i class="bi bi-shop fs-5"></i> <span data-i18n="biz_pill_restaurant">Restaurant</span></div>
-                <div class="biz-pill" data-type="other" data-icon="bi-check-circle-fill" data-reward="10% Off after 8 stamps"><i class="bi bi-check-circle-fill fs-5"></i> <span data-i18n="biz_pill_other">Other Service</span></div>
-            </div>
-        </div>
-
-        <!-- STEP 1 -->
-        <div id="screen1" class="wizard-screen active">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="ios-card">
-                        <h5 class="fw-bold mb-4 fs-4" data-i18n="step1_title">Store Details</h5>
-                        <div class="mb-0">
-                            <label class="form-label" data-i18n="label_store_name">Store name *</label>
-                            <input type="text" id="storeName" class="form-control" data-i18n-placeholder="placeholder_store_name" placeholder="e.g., Moe's Coffee" maxlength="30" required>
-                        </div>
-                    </div>
-
-                    <div class="ios-card">
-                        <h5 class="fw-bold mb-4 fs-4 d-flex align-items-center" data-i18n="label_location_hours">Location & Hours <span class="badge bg-light text-secondary ms-3 fs-6 fw-normal border" data-i18n="label_optional">Optional</span></h5>
-                        <div class="mb-4">
-                            <label class="form-label" data-i18n="label_opening_time">Opening time</label>
-                            <div class="input-group">
-                                <input type="time" id="openingTime" class="form-control" value="09:00">
-                                <button class="btn btn-clear" type="button" onclick="document.getElementById('openingTime').value=''"><i class="bi bi-x-circle-fill"></i></button>
-                            </div>
-                            <div class="input-hint" data-i18n="hint_opening_time">Alerts customers when you open for the day. Clear if unwanted.</div>
-                        </div>
-
-                        <div class="mb-0">
-                            <label class="form-label" data-i18n="label_gps_location">GPS Location</label>
-                            <div class="input-group">
-                                <input type="text" id="location" class="form-control" data-i18n-placeholder="placeholder_gps_location" placeholder="Latitude, Longitude">
-                                <button class="btn btn-clear" type="button" onclick="document.getElementById('location').value=''"><i class="bi bi-x-circle-fill"></i></button>
-                                <button class="btn btn-loc" type="button" id="btnGetLoc"><i class="bi bi-geo-alt-fill"></i> Locate</button>
-                            </div>
-                            <div class="input-hint" data-i18n="hint_gps_location">Enables localized lockscreen alerts when nearby.</div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row gap-3 mt-5">
-                        <button class="btn-ios-outline flex-fill py-3" id="btnSkip" data-i18n="btn_skip">Use Defaults</button>
-                        <button class="btn-ios-primary flex-fill py-3" id="btnCustomize" data-i18n="btn_customize">Customize Store Info</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-       <!-- STEP 2 -->
-        <div id="screen2" class="wizard-screen">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="ios-card">
-                        <h5 class="fw-bold mb-4 fs-4" data-i18n="step2_title">Design & Rewards</h5>
-                        <div class="mb-4">
-                            <label class="form-label" data-i18n="label_display_name">Display name</label>
-                            <input type="text" id="displayName" class="form-control" data-i18n-placeholder="placeholder_display_name" placeholder="Moe's Coffee" maxlength="20">
-                            <div class="input-hint" data-i18n="hint_display_name">What will display on the customers card. Max 20 characters.</div>
-                        </div>
-
-                        <div class="mb-0">
-                            <label class="form-label" data-i18n="label_reward_desc">Reward description</label>
-                            <input type="text" id="rewardDesc" class="form-control" value="Free coffee after 8 stamps" maxlength="30">
-                        </div>
-                        <div class="input-hint" data-i18n="hint_reward_desc">Max 30 characters (e.g., Free drinks after 8 stamps).</div>
-                    </div>
-
-                    <div class="ios-card">
-                        <h5 class="fw-bold mb-4 fs-4 d-flex align-items-center" data-i18n="label_loyalty_rules">Loyalty Rules <span class="badge bg-light text-secondary ms-3 fs-6 fw-normal border" data-i18n="label_optional">Optional</span></h5>
-                        <div class="mb-4">
-                            <label class="form-label" data-i18n="label_expiry">Card expiry date</label>
-                            <div class="input-group">
-                                <input type="date" id="expiryDate" class="form-control" max="2030-12-31">
-                                <button class="btn btn-clear" type="button" onclick="document.getElementById('expiryDate').value=''"><i class="bi bi-x-circle-fill"></i></button>
-                            </div>
-                        </div>
-
-                        <div class="row mb-4 g-2">
-                            <div class="col-6">
-                                <label class="form-label" data-i18n="label_happy_hour_start">Happy hour start</label>
-                                <div class="input-group">
-                                    <input type="time" id="bonusStart" class="form-control">
-                                    <button class="btn btn-clear" type="button" onclick="document.getElementById('bonusStart').value=''"><i class="bi bi-x-circle-fill"></i></button>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <label class="form-label" data-i18n="label_happy_hour_end">Happy hour end</label>
-                                <div class="input-group">
-                                    <input type="time" id="bonusEnd" class="form-control">
-                                    <button class="btn btn-clear" type="button" onclick="document.getElementById('bonusEnd').value=''"><i class="bi bi-x-circle-fill"></i></button>
-                                </div>
-                            </div>
-                            <div class="col-12"><div class="input-hint" data-i18n="hint_happy_hour">Earn 2 stamps instead of 1. Clear both to disable.</div></div>
-                        </div>
-
-                        <div class="mb-0">
-                            <label class="form-label" data-i18n="label_remind_days">Remind after inactivity (days)</label>
-                            <div class="input-group">
-                                <input type="number" id="remindDays" class="form-control" data-i18n-placeholder="placeholder_remind_days" placeholder="e.g., 14" min="1" max="365" oninput="if(this.value > 365) this.value = 365;">
-                                <button class="btn btn-clear" type="button" onclick="document.getElementById('remindDays').value=''"><i class="bi bi-x-circle-fill"></i></button>
-                            </div>
-                            <div class="input-hint" data-i18n="hint_remind_days">Local notification if no visit in this many days (Max 365).</div>
-                        </div>
-                    </div>
-
-                    <div class="mt-5">
-                        <button class="btn-ios-primary py-3 fs-5" id="btnCreateShop" data-i18n="btn_create_qr">Get Store QR</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 d-none d-lg-block">
-                    <!-- Sticky Live Preview -->
-                    <div class="wallet-pass-preview" id="walletPassPreview">
-                        <div class="pass-header">
-                            <div class="pass-name-pill" id="previewPassName">Moe's Coffee</div>
-                        </div>
-                        <div class="pass-body">
-                            <div id="previewStamps" class="stamp-grid"></div>
-                            <div class="reward-text" id="previewReward">Free coffee after 8 stamps</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- /formContainer -->
-
-    <!-- STEP 3: DASHBOARD & TIPS -->
-    <div id="screen3" class="wizard-screen">
-        <!-- The QR Viewport -->
-        <div class="dashboard-viewport px-3 pt-4">
-            <div class="container d-flex flex-column align-items-center">
-                <div class="qr-stage">
-                    <h3 class="fw-bold mb-4" data-i18n="step3_title">Your QR Code</h3>
-
-                    <div class="segmented-control mx-auto mb-3">
-                        <span class="segmented-option" data-mode="basic" data-i18n="sec_mode_basic">Basic</span>
-                        <span class="segmented-option active" data-mode="simple" data-i18n="sec_mode_simple">Simple</span>
-                        <span class="segmented-option" data-mode="secure" data-i18n="sec_mode_secure">Secure</span>
-                    </div>
-                    <p id="securityDesc" class="security-desc mb-3" data-i18n="sec_desc_simple">Medium security – Customers can only stamp once per day. QR codes expire daily and require customers to be physically near your store to stamp. Prevents old QR reuse and screenshot sharing. Requires refreshing the QR code daily (refresh the page or print fresh). Recommended for most stores.</p>
-
-                    <div id="combinedQr"></div>
-
-                    <div class="d-flex flex-column gap-3 mt-4 mx-auto">
-                        <button class="btn-ios-primary w-100 py-3" id="btnPrintCombined"><i class="bi bi-printer-fill"></i> <span data-i18n="btn_print_today">Print Today's QR Code</span></button>
-                        <button class="btn-ios-outline w-100 py-3" id="btnPrintWeekly"><i class="bi bi-calendar-week-fill"></i> <span data-i18n="btn_print_weekly">Print 7-Day Batch</span></button>
-                    </div>
-
-                    <div class="backup-restore-container mt-4 pt-4 border-top">
-                        <button class="btn-backup" id="btnBackup"><i class="bi bi-cloud-arrow-down-fill me-1"></i> <span data-i18n="btn_backup">Backup</span></button>
-                        <button class="btn-restore" id="btnRestore"><i class="bi bi-cloud-arrow-up-fill me-1"></i> <span data-i18n="btn_restore">Restore</span></button>
-                        <input type="file" id="restoreInput" accept=".json" />
-                    </div>
-                    <div id="backupStatus" class="backup-status"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="marquee-wrapper">
-            <div class="marquee-track">
-                <div class="marquee-item" data-i18n="marquee_example_1">(New York)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_2">(Berlin)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_3">(Austin)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_4">(Paris)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_5">(Munich)</div>
-                <div class="marquee-item">•</div>
-                <!-- Duplicate for seamless loop -->
-                <div class="marquee-item" data-i18n="marquee_example_1">(New York)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_2">(Berlin)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_3">(Austin)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_4">(Paris)</div>
-                <div class="marquee-item">•</div>
-                <div class="marquee-item" data-i18n="marquee_example_5">(Munich)</div>
-                <div class="marquee-item">•</div>
-            </div>
-        </div>
-
-        <footer>
-            <div class="container px-4 text-center">
-                <div class="brand-logo justify-content-center mb-4">
-                  <img src="images/VOUCHRLOGO.png" alt="Vouchr" height="35" style="margin-right: 2px;">
-                  <span data-i18n="footer_brand">Vouchr Store Builder</span>
-                </div>        
-                <div class="footer-links mb-4">
-                    <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
-                    <a href="terms.html" data-i18n="footer_terms">Terms of Service</a>
-                    <a href="mailto:develop@pocketenginestudio.com" data-i18n="footer_contact">Contact Us</a>
-                </div>
-                <p class="text-muted small mb-0" data-i18n="footer_copyright">&copy; 2026 PocketEngine Studio LLC. All rights reserved.</p>
-            </div>
-        </footer>
-    </div> <!-- /screen3 -->
-
-    <!-- INSTALL BANNER -->
-    <div id="installBanner">
-        <div class="d-flex align-items-center gap-3">
-            <i class="bi bi-app-indicator fs-2" style="color: var(--ios-blue);"></i>
-            <div class="install-text">
-                <h6>Install Vouchr</h6>
-                <p>Add to Home Screen</p>
-            </div>
-        </div>
-        <div class="d-flex align-items-center gap-1">
-            <button id="installAppBtn">Install</button>
-            <button class="btn-close-banner" onclick="dismissInstallBanner()"><i class="bi bi-x-circle-fill"></i></button>
-        </div>
-    </div>
-</main>
-
-<script src="js/nacl-fast.min.js"></script>
-<script src="js/nacl-util.min.js"></script>
-<script src="js/qrcode.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/i18n.js"></script>
-
-<script>
-    // Input Sanitization
-    function sanitize(input) { return input.replace(/[^a-zA-Z0-9\s\-'\.&\/\(\)!?_+=:,]/g, '').substring(0, 40); }
-    
-    document.getElementById('storeName').addEventListener('input', function() { 
-        this.value = sanitize(this.value); 
-        document.getElementById('displayName').value = this.value.substring(0, 20); 
-        updatePreview(); 
-    });
-    
-    document.getElementById('displayName').addEventListener('input', function() { this.value = sanitize(this.value); updatePreview(); });
-    document.getElementById('rewardDesc').addEventListener('input', function() { this.value = sanitize(this.value); updatePreview(); });
-
-    // GPS Auto-detect
-    document.getElementById('btnGetLoc').addEventListener('click', () => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (pos) => {
-                    document.getElementById('location').value = 
-                        `${pos.coords.latitude.toFixed(6)}, ${pos.coords.longitude.toFixed(6)}`;
-                },
-                (err) => {
-                    let msg = 'Unable to retrieve location. ';
-                    switch (err.code) {
-                        case err.PERMISSION_DENIED:
-                            msg += 'Please enable location permissions in your browser settings.';
-                            break;
-                        case err.POSITION_UNAVAILABLE:
-                            msg += 'GPS signal unavailable. Try moving to an open area.';
-                            break;
-                        case err.TIMEOUT:
-                            msg += 'Location request timed out. Try again.';
-                            break;
-                        default:
-                            msg += 'Unknown error.';
-                    }
-                    alert(msg);
-                },
-                { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
-            );
-        } else {
-            alert('Geolocation is not supported by this browser.');
-        }
-    });
-
-    // Accurate Private / Restricted Storage Test
-    function checkStorageReliability() {
-        try {
-            const testKey = '__vouchr_test__';
-            localStorage.setItem(testKey, '1');
-            localStorage.removeItem(testKey);
-            return true;
-        } catch (e) {
-            return false;
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        if (!checkStorageReliability()) {
-            const statusEl = document.getElementById('backupStatus');
-            if (statusEl) {
-                statusEl.innerHTML = `⚠️ <strong>Storage Restricted:</strong> Private mode detected. Download a backup to preserve store data.`;
-                statusEl.style.color = '#FF9500';
-            }
-        }
-    });
-
-    // Business Type Pills & Preview Logic
-    let activeIcon = 'bi-cup-hot-fill';
-    let activeType = 'cafe';
-    document.querySelectorAll('.biz-pill').forEach(pill => {
-        pill.addEventListener('click', function() {
-            document.querySelectorAll('.biz-pill').forEach(p => p.classList.remove('active'));
-            this.classList.add('active');
-            activeIcon = this.dataset.icon;
-            activeType = this.dataset.type;
-            document.getElementById('rewardDesc').value = this.dataset.reward;
-            updatePreview();
-        });
-    });
-
-    function updatePreview() {
-        const rawName = document.getElementById('displayName').value || document.getElementById('storeName').value || "Store Name";
-        document.getElementById('previewPassName').textContent = rawName.substring(0, 20);
-        const stampsDiv = document.getElementById('previewStamps'); 
-        stampsDiv.innerHTML = '';
-
-        for (let row = 0; row < 2; row++) {
-            const rowDiv = document.createElement('div'); 
-            rowDiv.className = 'stamp-row';
-            for (let col = 0; col < 4; col++) {
-                const idx = row * 4 + col;
-                const circle = document.createElement('div');
-                circle.className = idx < 3 ? 'stamp-filled' : 'stamp-empty'; 
-                circle.innerHTML = `<i class="bi ${activeIcon}"></i>`;
-                rowDiv.appendChild(circle);
-            }
-            stampsDiv.appendChild(rowDiv);
-        }
-        document.getElementById('previewReward').textContent = document.getElementById('rewardDesc').value || 'Reward description';
-    }
-    updatePreview();
-
-    // Navigation and Screens
-    const s1 = document.getElementById('screen1');
-    const s2 = document.getElementById('screen2');
-    const s3 = document.getElementById('screen3');
-    const formContainer = document.getElementById('formContainer');
-
-    function show(stepNum) { 
-        [s1, s2, s3].forEach(el => el.classList.remove('active')); 
-        document.getElementById('screen' + stepNum).classList.add('active'); 
-
-        if(stepNum === 3) {
-            formContainer.style.display = 'none';
-        } else {
-            formContainer.style.display = 'block';
-        }
-
-        const headerLeft = document.getElementById('dynamicHeaderLeft');
-        if (stepNum === 1) {
-            headerLeft.innerHTML = ``; 
-        } else if (stepNum === 2) {
-            headerLeft.innerHTML = `<div class="back-btn mb-0 mt-1" onclick="show(1)" style="font-size: 1rem;"><i class="bi bi-arrow-left me-1"></i> Back</div>`;
-        } else if (stepNum === 3) {
-            headerLeft.innerHTML = `<div class="back-btn mb-0 mt-1" onclick="show(2)" style="font-size: 1rem; padding-left: 0;"><i class="bi bi-arrow-left me-1"></i> Back</div>`;
-        }
-
-        window.scrollTo(0,0);
-
-        document.querySelectorAll('.step-dot').forEach(dot => {
-            dot.classList.toggle('active', parseInt(dot.dataset.step) <= stepNum);
-        });
-        document.getElementById('line1').classList.toggle('active', stepNum >= 2);
-        document.getElementById('line2').classList.toggle('active', stepNum >= 3);
-    }
-
-    // Store Creation Logic
-    let storeData = {}; 
-    let keyPair = null;
-    function uuidv4() { return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c => (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)); }
-
-    function isValidLocation(loc) {
-        if (!loc) return true;
-        const parts = loc.split(',');
-        if (parts.length !== 2) return false;
-        const lat = parseFloat(parts[0].trim());
-        const lng = parseFloat(parts[1].trim());
-        if (isNaN(lat) || isNaN(lng)) return false;
-        if (lat < -90 || lat > 90) return false;
-        if (lng < -180 || lng > 180) return false;
-        return true;
-    }
-
-    async function createStore(skip) {
-        const sn = document.getElementById('storeName').value;
-        if (!sn) {
-            alert('Please enter a Store Name first.');
-            return false;
-        }
-
-        keyPair = nacl.sign.keyPair();
-        const hhs = document.getElementById('bonusStart').value;
-        const hhe = document.getElementById('bonusEnd').value;
-        const remindInput = document.getElementById('remindDays').value;
-
-        storeData = {
-            sid: uuidv4(), 
-            sn: skip ? sn : (document.getElementById('displayName').value || sn), 
-            loc: document.getElementById('location').value || null,
-            pk: nacl.util.encodeBase64(keyPair.publicKey),
-            tz: Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC',
-            ct: { 
-                dn: skip ? sn : (document.getElementById('displayName').value || sn),
-                rd: skip ? 'Reward' : document.getElementById('rewardDesc').value,
-                ot: skip ? null : (document.getElementById('openingTime').value || null),
-                exp: skip ? null : (document.getElementById('expiryDate').value || null),
-                bh: skip ? null : (hhs && hhe ? [hhs, hhe] : null),
-                rad: skip ? null : (remindInput ? Math.min(parseInt(remindInput), 365).toString() : null),
-                t: activeType
-            }
-        };
-
-        if (storeData.loc && !isValidLocation(storeData.loc)) {
-            alert('Please enter a valid GPS location (e.g., 37.7749,-122.4194) or leave it empty.');
-            return false;
-        }
-
-        localStorage.setItem('storePrivateKey', nacl.util.encodeBase64(keyPair.secretKey));
-        localStorage.setItem('storeData', JSON.stringify(storeData));
-        return true;
-    }
-
-    document.getElementById('btnSkip').addEventListener('click', async () => { if (await createStore(true)) { generateQR(); show(3); }});
-    document.getElementById('btnCustomize').addEventListener('click', () => { show(2); });
-    document.getElementById('btnCreateShop').addEventListener('click', async () => { if (await createStore(false)) { generateQR(); show(3); }});
-    
-    // Security Segmented Control with Fallback
-    const fallbackDescriptions = {
-        'basic': 'Low security – Customers can only stamp once per day. Your QR code never changes, so you print it once and use it forever. No date, location, or signature checks. Best for low-traffic areas where fraud is not a concern.',
-        'simple': 'Medium security – Customers can only stamp once per day. QR codes expire daily and require customers to be physically near your store to stamp. Prevents old QR reuse and screenshot sharing. Requires refreshing the QR code daily. Recommended for most stores.',
-        'secure': 'High security – All the protection of Simple mode, plus cryptographic signing that prevents QR tampering and forgery. The app cryptographically verifies every scan against your stores private key. Perfect for busy, high-value stores.'
-    };
-
-    document.querySelectorAll('.segmented-option').forEach(opt => {
-        opt.addEventListener('click', function() {
-            document.querySelectorAll('.segmented-option').forEach(o => o.classList.remove('active'));
-            this.classList.add('active'); 
-            const mode = this.dataset.mode;
-            
-            // Try taking standard translation key; if missing, use the english fallback dictionary
-            const key = 'sec_desc_' + mode;
-            const translatedText = translations[key] || fallbackDescriptions[mode];
-            document.getElementById('securityDesc').textContent = translatedText;
-            
-            generateQR();
-        });
-    });
-
-    function generateQR() {
-        const container = document.getElementById('combinedQr'); 
-        container.innerHTML = '';
-        const mode = document.querySelector('.segmented-option.active').dataset.mode;
-
-        const payload = { 
-            sid: storeData.sid, sn: storeData.sn, pk: storeData.pk, ct: storeData.ct, m: mode, tz: storeData.tz || 'UTC'
-        };
-
-        if (storeData.loc) {
-            payload.loc = storeData.loc;
-        }
-
-        if (mode === 'simple' || mode === 'secure') {
-            payload.d = new Date().toISOString().split('T')[0];
-        }
-        if (mode === 'secure') {
-            const sk = nacl.util.decodeBase64(localStorage.getItem('storePrivateKey'));
-            payload.sig = nacl.util.encodeBase64(nacl.sign.detached(nacl.util.decodeUTF8(storeData.sid + payload.d), sk));
-        }
-
-        const payloadStr = JSON.stringify(payload);
-        const encodedPayload = encodeURIComponent(payloadStr);
-        const qrUrl = `https://vouchrdigital.pocketenginestudio.com/get.html?payload=${encodedPayload}`;
-
-        new QRCode(container, {
-            text: qrUrl, width: 340, height: 340, colorDark: "#1D1D1F", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H
-        });
-    }
-
-    // Print Single
-    document.getElementById('btnPrintCombined').addEventListener('click', () => {
-        const c = document.querySelector('#combinedQr canvas');
-        if (c) { 
-            const w = window.open('','_blank'); 
-            w.document.write(`<div style="text-align:center;padding:40px;font-family:-apple-system, sans-serif;">
-                <h1 style="font-size:3.5rem; margin-bottom: 10px; font-weight: 800; letter-spacing: -1px;">${storeData.sn}</h1>
-                <p style="font-size:1.5rem; color: #86868B; margin-bottom: 50px; font-weight: 500;">Scan to collect your loyalty stamp</p>
-                <img src="${c.toDataURL()}" style="width:400px; height:400px; border-radius:20px;">
-            </div>`); 
-            w.document.close();
-            setTimeout(() => w.print(), 200); 
-        }
-    });
-
-    // Print Weekly Batch
-    document.getElementById('btnPrintWeekly').addEventListener('click', () => {
-        const mode = document.querySelector('.segmented-option.active').dataset.mode;
-        const w = window.open('','_blank'); 
-        let html = `<div style="text-align:center;font-family:-apple-system, sans-serif;">`;
-
-        const hiddenDiv = document.createElement('div');
-        const daysToPrint = mode === 'basic' ? 1 : 7; 
-
-        for(let i = 0; i < daysToPrint; i++) {
-            let targetDate = new Date();
-            targetDate.setDate(targetDate.getDate() + i);
-            let dateStr = targetDate.toISOString().split('T')[0];
-            let displayDate = targetDate.toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
-
-            const payload = { sid: storeData.sid, sn: storeData.sn, pk: storeData.pk, ct: storeData.ct, m: mode, tz: storeData.tz || 'UTC' };
-            if (mode === 'simple' || mode === 'secure') { payload.d = dateStr; }
-            if (mode === 'secure') {
-                const sk = nacl.util.decodeBase64(localStorage.getItem('storePrivateKey'));
-                payload.sig = nacl.util.encodeBase64(nacl.sign.detached(nacl.util.decodeUTF8(storeData.sid + payload.d), sk));
-            }
-
-            hiddenDiv.innerHTML = '';
-            new QRCode(hiddenDiv, {
-                text: `https://vouchrdigital.pocketenginestudio.com/get.html?payload=${encodeURIComponent(JSON.stringify(payload))}`,
-                width: 400, height: 400, colorDark: "#1D1D1F", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H
-            });
-
-            let canvas = hiddenDiv.querySelector('canvas');
-
-            html += `
-            <div style="page-break-after: always; padding: 40px;">
-                <h1 style="font-size:3.5rem; margin-bottom: 5px; font-weight: 800; letter-spacing: -1px;">${storeData.sn}</h1>
-                <h2 style="font-size:2rem; color: #007AFF; margin-bottom: 10px; font-weight: 700;">${mode === 'basic' ? 'Standard Pass' : displayDate}</h2>
-                <p style="font-size:1.5rem; color: #86868B; margin-bottom: 50px; font-weight: 500;">Scan to collect your loyalty stamp</p>
-                <img src="${canvas.toDataURL()}" style="width:400px; height:400px; border-radius:20px;">
-            </div>`;
-        }
-        html += `</div>`;
-        w.document.write(html);
-        w.document.close();
-        setTimeout(() => w.print(), 500);
-    });
-
-    // Backup / Restore
-    document.getElementById('btnBackup').addEventListener('click', function() {
-        const privateKey = localStorage.getItem('storePrivateKey');
-        const storeDataRaw = localStorage.getItem('storeData');
-        if (!storeDataRaw) {
-            document.getElementById('backupStatus').textContent = 'No data to backup.';
-            document.getElementById('backupStatus').style.color = '#FF3B30';
-            return;
-        }
-        const backupData = { storeData: JSON.parse(storeDataRaw), privateKey: privateKey, exportedAt: new Date().toISOString() };
-        const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url; a.download = `vouchr_backup_${new Date().toISOString().slice(0,10)}.json`;
-        document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
-        document.getElementById('backupStatus').textContent = 'Backup downloaded successfully!';
-        document.getElementById('backupStatus').style.color = '#34C759';
-    });
-
-    document.getElementById('btnRestore').addEventListener('click', () => document.getElementById('restoreInput').click());
-
-    document.getElementById('restoreInput').addEventListener('change', function(e) {
-        const file = e.target.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = function(event) {
+    <!-- ─── Load Partials ─── -->
+    <script>
+        (async function loadPartials() {
+            const partials = [
+                'partials/header.html',
+                'partials/step1.html',
+                'partials/step2.html',
+                'partials/review.html',
+                'partials/step3.html'
+            ];
             try {
-                const backupData = JSON.parse(event.target.result);
-                if (!backupData.storeData || !backupData.privateKey) throw new Error('Invalid backup file.');
-                localStorage.setItem('storeData', JSON.stringify(backupData.storeData));
-                localStorage.setItem('storePrivateKey', backupData.privateKey);
-                document.getElementById('backupStatus').textContent = 'Restore successful! Reloading...';
-                document.getElementById('backupStatus').style.color = '#34C759';
-                setTimeout(() => window.location.reload(), 1500);
+                const htmls = await Promise.all(partials.map(url => fetch(url).then(r => r.text())));
+                document.getElementById('app').innerHTML = htmls.join('');
+                // All DOM elements now exist – initialize the app
+                if (typeof initApp === 'function') {
+                    initApp();
+                } else {
+                    console.error('initApp() not found in app.js');
+                }
             } catch (err) {
-                document.getElementById('backupStatus').textContent = 'Restore failed.';
-                document.getElementById('backupStatus').style.color = '#FF3B30';
+                document.getElementById('app').innerHTML = `
+                    <div class="container text-center py-5">
+                        <h3>⚠️ Failed to load builder components</h3>
+                        <p class="text-muted">Make sure you are running a local server and all partial files exist in the <code>partials/</code> folder.</p>
+                        <p><small>Error: ${err.message}</small></p>
+                    </div>
+                `;
+                console.error('Failed to load partials:', err);
             }
-        };
-        reader.readAsText(file);
-        e.target.value = '';
-    });
-
-    // Check Existing Data on Load
-    if (localStorage.getItem('storeData')) { 
-        storeData = JSON.parse(localStorage.getItem('storeData')); 
-
-        document.getElementById('storeName').value = storeData.sn;
-        document.getElementById('displayName').value = storeData.ct.dn || storeData.sn;
-        document.getElementById('location').value = storeData.loc || '';
-        document.getElementById('rewardDesc').value = storeData.ct.rd || '';
-        document.getElementById('openingTime').value = storeData.ct.ot || '';
-        document.getElementById('expiryDate').value = storeData.ct.exp || '';
-        if(storeData.ct.bh) {
-            document.getElementById('bonusStart').value = storeData.ct.bh[0] || '';
-            document.getElementById('bonusEnd').value = storeData.ct.bh[1] || '';
-        }
-        document.getElementById('remindDays').value = storeData.ct.rad || '';
-
-        updatePreview();
-        generateQR(); 
-        show(3); 
-    }
-</script>
-
-<script>
-    // Add to Home Screen Detection & Prompt
-    (function() {
-        const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
-        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-        const bannerDismissed = localStorage.getItem('vouchr-install-dismissed') === 'true';
-
-        if (!isStandalone && isSafari && !bannerDismissed) {
-            setTimeout(() => { document.getElementById('installBanner').classList.add('visible'); }, 1500);
-        }
-        
-        window.dismissInstallBanner = function() {
-            document.getElementById('installBanner').classList.remove('visible');
-            localStorage.setItem('vouchr-install-dismissed', 'true');
-        };
-
-        document.getElementById('installAppBtn').addEventListener('click', function() {
-            alert(
-                '📱 How to install Vouchr on your Home Screen:\n\n' +
-                '1. Tap the Share icon (square with arrow) at the bottom of Safari\n' +
-                '2. Scroll down and tap "Add to Home Screen"\n' +
-                '3. Tap "Add" in the top right corner\n\n' +
-                'This will keep your store data safe and make Vouchr feel like a native app!'
-            );
-            dismissInstallBanner();
-        });
-    })();
-</script>
+        })();
+    </script>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!-- STEP 2 -->
+<div id="screen2" class="wizard-screen">
+    <div class="app-container" style="padding-top: 0;">
+        <div class="row justify-content-center g-5">
+            <div class="col-lg-7">
+                <div class="ios-card">
+                    <h5 class="fw-bold mb-4 fs-4" data-i18n="step2_title">Design & Rewards</h5>
+                    <div class="mb-4">
+                        <label class="form-label" data-i18n="label_display_name">Display name</label>
+                        <input type="text" id="displayName" class="form-control" data-i18n-placeholder="placeholder_display_name" placeholder="Moe's Coffee" maxlength="20">
+                        <div class="input-hint" data-i18n="hint_display_name">What will display on the customers card. Max 20 characters.</div>
+                    </div>
+
+                    <div class="mb-0">
+                        <label class="form-label" data-i18n="label_reward_desc">Reward description</label>
+                        <input type="text" id="rewardDesc" class="form-control" value="Free coffee after 8 stamps" maxlength="30">
+                    </div>
+                    <div class="input-hint" data-i18n="hint_reward_desc">Max 30 characters (e.g., Free drinks after 8 stamps).</div>
+                </div>
+
+                <div class="ios-card">
+                    <h5 class="fw-bold mb-4 fs-4 d-flex align-items-center" data-i18n="label_loyalty_rules">Loyalty Rules <span class="badge bg-light text-secondary ms-3 fs-6 fw-normal border" data-i18n="label_optional">Optional</span></h5>
+                    <div class="mb-4">
+                        <label class="form-label" data-i18n="label_expiry">Card expiry date</label>
+                        <div class="input-group">
+                            <input type="date" id="expiryDate" class="form-control" max="2030-12-31">
+                            <button class="btn btn-clear" type="button" onclick="document.getElementById('expiryDate').value=''"><i class="bi bi-x-circle-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4 g-2">
+                        <div class="col-6">
+                            <label class="form-label" data-i18n="label_happy_hour_start">Happy hour start</label>
+                            <div class="input-group">
+                                <input type="time" id="bonusStart" class="form-control">
+                                <button class="btn btn-clear" type="button" onclick="document.getElementById('bonusStart').value=''"><i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" data-i18n="label_happy_hour_end">Happy hour end</label>
+                            <div class="input-group">
+                                <input type="time" id="bonusEnd" class="form-control">
+                                <button class="btn btn-clear" type="button" onclick="document.getElementById('bonusEnd').value=''"><i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-12"><div class="input-hint" data-i18n="hint_happy_hour">Earn 2 stamps instead of 1. Clear both to disable.</div></div>
+                        <div id="happyHourWarning" class="text-danger" style="font-size:0.85rem; margin-top:4px; display:none;">Fill both start and end times to enable Happy Hour, or clear both to disable it.</div>
+                    </div>
+
+                    <div class="mb-0">
+                        <label class="form-label" data-i18n="label_remind_days">Remind after inactivity (days)</label>
+                        <div class="input-group">
+                            <input type="number" id="remindDays" class="form-control" data-i18n-placeholder="placeholder_remind_days" placeholder="e.g., 14" min="1" max="365" oninput="if(this.value > 365) this.value = 365;">
+                            <button class="btn btn-clear" type="button" onclick="document.getElementById('remindDays').value=''"><i class="bi bi-x-circle-fill"></i></button>
+                        </div>
+                        <div class="input-hint" data-i18n="hint_remind_days">Local notification if no visit in this many days (Max 365).</div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <button class="btn-ios-primary py-3 fs-5" id="btnCreateShop" data-i18n="btn_create_qr">Get Store QR</button>
+                </div>
+            </div>
+
+            <div class="col-lg-5 d-none d-lg-block">
+                <div class="wallet-pass-preview" id="walletPassPreview">
+                    <div class="pass-header">
+                        <div class="pass-name-pill" id="previewPassName">Moe's Coffee</div>
+                    </div>
+                    <div class="pass-body">
+                        <div id="previewStamps" class="stamp-grid"></div>
+                        <div class="reward-text" id="previewReward">Free coffee after 8 stamps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
