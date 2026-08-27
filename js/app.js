@@ -6,7 +6,7 @@ let activeType = 'cafe';
 
 // ─── SANITIZE ───
 function sanitize(input) {
-    return input.replace(/[^a-zA-Z0-9\s\-'\.&\/\(\)!?_+=:,%$#€£@*]/g, '').substring(0, 40);
+    return input.replace(/[^a-zA-Z0-9\s\-'\.&\/\(\)!?_+=:,%$#€£@*¥¢₩~°₹₽\p{L}\p{N}]/gu, '').substring(0, 40);
 }
 // ─── UUID ───
 function uuidv4() {
